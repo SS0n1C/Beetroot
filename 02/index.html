@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_2</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;;
+        }
+        header{
+       text-align: center;
+        }
+        .main_content{
+            display: flex;
+            margin:20px 30px 0px 30px ;
+            justify-content: space-between;
+        }
+        .content {
+            width: 70%;
+        }
+        .content img{
+            width: 70%;
+        }
+        footer {
+            background-color: aqua;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .left_content{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color:#F2FFCA;
+        }
+        section span{
+            color:red;
+            font-size: 20px;
+        }
+        nav ul li{
+            display:inline-block;
+            margin-left: 20px;
+            color:blueviolet;
+            font-size: 20px;
+            background-color: yellowgreen;
+            border-radius: 20px;
+            width: 100px;
+        }
+        #opinion{
+            background-color:#C9C9C9;
+            height: 300px;
+        }
+        .opinion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:red;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #about_me{
+            height: 700px;
+            width: 100%;
+        }
+        .about_me{ 
+            margin-top:50px;
+           text-align: center;
+            font-size: 20px;
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Чому я не був на уроці</h1>
+        <nav>
+         <details><summary>Навігація</summary>
+            <ul>
+                <li><a href="#opinion">Про борщ</a></li>
+                <li><a href="#travel">Маршрут</a></li>
+                <li><a href="#video">Відео</a></li>
+                <li><a href="#about_me">Резюме</a></li>
+            </ul>
+        </details>
+    </nav>
+    </header>
+    <main>
+    <div class="main_content">
+        <div class="content">
+            <section>
+                <h2>Важки часи - але жити потрібно.</h2>
+                <p><i>Доброго дня, не зміг відідати <strong> другий урок</strong>, мені дуже шкода що так вийшло</i></p>
+                <p><i>Справа в тому, що їздив у справах в Харків, а як ви знаете що зараз в нього важче потрапити
+                    чим з нього потім вибратись</i></p>
+                <p><i> Ви спитаете мане: <br><b>"А чому с Телефона не дивився?"</b>
+                    <br>А я відповім: Дороги у нас може і хорошші,
+                 але звязок далеко не на висоті.</i></p>
+                <hr>
+            </section>
+            <section>
+                <h2>Я вам тут карти приніс</h2>
+                <span><b>Ось карта України</b></span>
+                <br>
+                <img src="aseets/IMG/map1.png" alt="Карта України">
+                <br>
+                <span><b>А ось так я їхав</b></span>
+                <br>
+                <img src="aseets/IMG/map2.png" id="travel" alt="Карта України з маршрутом">
+                <hr>
+            </section>
+        </div>
+        <div class="left_content">
+            <aside>
+                <h3> Мої контактні дані</h3>
+                <ul>
+                    <li><a href="mailto:lls.s0n1cll@gmail.com">Mail</a></li>
+                    <li><a href="tel:380933290995">+380-93-329-09-95</a></li>
+                    <li><a href="https://www.instagram.com/s_s1c/" target="_blank" rel="noindex nofollow">Інстаграм</a></li>
+                    <li><a href="https://www.linkedin.com/in/vitalii-lymar-a0874023a" target="_blank" rel="noindex, nofollow">Лінкедін</a></li>
+                </ul>
+            </aside>
+            <article id="opinion">
+                <h4>А ось моя думка про борщ:</h4>
+                <div class="opinion"><strong>Мені не пододаеться!!!</strong></div>
+            </article>
+        </div>
+    </div>
+<div class="content_media">
+    <section>
+        <h2>Ще є відео</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/FII4DRuiLLI"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <article class="about_me">
+        <h2 >Резюме</h2>
+        <iframe src="https://ss0n1c.github.io/01/" frameborder="0" id="about_me"></iframe>
+    </article>
+</div>
+    </main>
+    <footer>
+        (C) Зроблено людиною, дял людей
+    </footer>
+</body>
+
+</html>
