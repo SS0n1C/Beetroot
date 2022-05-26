@@ -103,11 +103,39 @@ h1{
     line-height: 25px;
     text-align: center;
     margin-bottom: 79px;
+    font-family: "Open Sans", sans-serif;
 }
 .skills_program{
     display: flex;
     margin:0px 52px 0px 39px;
     justify-content: space-between;
+}
+.skills_program_section{
+    display: flex;
+    flex-direction: column;
+    
+}
+.skills_program_img{
+    text-align: center;
+}
+.skills_program_img_figma{
+    text-align: center;
+}
+.skills_program_img_figma img{
+    width: 58px;
+    height: 88px;
+}
+.skills_program_img img{
+    width: 89px;
+    height: 88px;
+}
+.skills_program_txt{
+    margin-top: 22px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 59px;
+    height: 27px;
+    color:#828282;
 }
 .portfolio{
     background-color: #F6F6F6;
