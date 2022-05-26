@@ -1,0 +1,203 @@
+body, html{
+margin: 0 auto;
+height: 100%;
+}
+h1,h2,h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    margin: 0px;
+    width:100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    flex: 1 1 auto;
+}
+.conteiner{
+    width: 944px;
+    margin: 0 auto;
+}
+header{
+    margin-top: 23px;
+}
+header a{
+    color:#828282;
+}
+ul{
+    margin-left: 0px;
+}
+li{
+    list-style: none;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    margin-right: 41px;
+    fill: 1px grey;
+
+}
+li:first-child a{
+    margin-right: 0px;
+    color:black;
+}
+ul li{
+    display : inline-block;
+}
+nav {
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 1px black solid;
+  text-align: center;
+}
+.denis{
+    padding-bottom: 100px;
+}
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 47px;
+    font-weight: 700;
+    margin:34px 0 39px 0px; 
+}
+.about_me{
+    background-color:#F6F6F6;
+    text-align: center;
+}
+.about_h{
+    padding-top: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    padding-bottom: 28px;
+}
+.about_txt{
+    width: 480px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 100px;
+    font-family: "Open Sans", sans-serif;
+}
+.about_txt p{
+    padding-bottom: 30px;
+}
+.skills{
+    margin: 100px auto 83px auto;
+}
+.skills_h{
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.skills_txt{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 79px;
+}
+.skills_program{
+    display: flex;
+    margin:0px 52px 0px 39px;
+    justify-content: space-between;
+}
+.portfolio{
+    background-color: #F6F6F6;
+}
+.portfolio a{
+    color:black;
+}
+.portolio_h{
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 119px;
+    margin-bottom: 68px;
+}
+.portolio_link{
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.portolio_link_reebok{
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 8px;
+    text-align: center;
+    
+}
+.portolio_link_braun{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 1px;
+    text-align: center;
+    padding-bottom: 102px;
+}
+.portolio_example{
+    margin-bottom: 136px;
+}
+
+.footer_contacts{
+    margin: 100px auto 159px auto;
+    width:341px;
+    height: 411px;
+}
+.footer_media{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+.footer_h{
+    font-size: 34px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.footer_txt{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    line-height: 24.51px;
+    margin-bottom: 78px;
+
+}
+.footer_button{
+    width: 180px;
+    background-color: black;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    margin-bottom: 37px;
+}
+.footer_button a{
+    color:white;
+}
+.footer_meadia_txt{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color:#828282;
+}
