@@ -1,11 +1,16 @@
-body, html{
-margin: 0 auto;
-height: 100%;
-}
-h1,h2,h3,h4,h5{
+*{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
+body, html{
+height: 100%;
+font-family: "Open Sans", sans-serif;
+line-height:25px;
+font-size: 18px;
+}
+
 a{
     text-decoration: none;
 }
@@ -33,14 +38,11 @@ header a{
 }
 ul{
     margin-left: 0px;
+    padding-bottom: 29px;
 }
 li{
     list-style: none;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
     margin-right: 41px;
-    fill: 1px grey;
 
 }
 li:first-child a{
@@ -51,7 +53,6 @@ ul li{
     display : inline-block;
 }
 nav {
-  font-family: "Open Sans", sans-serif;
   border-bottom: 1px black solid;
   text-align: center;
 }
@@ -59,7 +60,7 @@ nav {
     padding-bottom: 100px;
 }
 h1{
-    font-family: "Open Sans", sans-serif;
+    
     font-size: 47px;
     font-weight: 700;
     margin:34px 0 39px 0px; 
@@ -70,7 +71,7 @@ h1{
 }
 .about_h{
     padding-top: 100px;
-    font-family: "Open Sans", sans-serif;
+  
     font-size: 34px;
     font-weight: 700;
     padding-bottom: 28px;
@@ -82,16 +83,16 @@ h1{
     font-size: 18px;
     line-height: 25px;
     padding-bottom: 100px;
-    font-family: "Open Sans", sans-serif;
+  
 }
-.about_txt p{
-    padding-bottom: 30px;
+.about_txt_p{
+    padding-bottom: 40px;
 }
 .skills{
     margin: 100px auto 83px auto;
 }
 .skills_h{
-    font-family: "Open Sans", sans-serif;
+ 
     font-size: 34px;
     font-weight: 700;
     text-align: center;
@@ -103,7 +104,7 @@ h1{
     line-height: 25px;
     text-align: center;
     margin-bottom: 79px;
-    font-family: "Open Sans", sans-serif;
+
 }
 .skills_program{
     display: flex;
@@ -140,11 +141,16 @@ h1{
 .portfolio{
     background-color: #F6F6F6;
 }
+.portolio_example{
+    padding-bottom: 158px;
+}
+.portolio_example:last-child{
+    margin-bottom: 10px;
+}
 .portfolio a{
     color:black;
 }
 .portolio_h{
-    font-family: "Open Sans", sans-serif;
     font-size: 34px;
     font-weight: 700;
     text-align: center;
@@ -154,7 +160,6 @@ h1{
 .portolio_link{
     font-size: 18px;
     line-height: 25px;
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin-top: 15px;
     text-align: center;
@@ -163,27 +168,19 @@ h1{
 .portolio_link_reebok{
     font-size: 18px;
     line-height: 25px;
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin-top: 8px;
     text-align: center;
-    
 }
 .portolio_link_braun{
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
     font-weight: 400;
     margin-top: 1px;
     text-align: center;
-    padding-bottom: 102px;
 }
-.portolio_example{
-    margin-bottom: 136px;
-}
-
 .footer_contacts{
-    margin: 0px auto 159px auto;
-    width:341px;
+    margin: 100px auto 159px auto;
+    width: 341px;
     height: 411px;
 }
 .footer_media{
@@ -194,14 +191,12 @@ h1{
 .footer_h{
     font-size: 34px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
     text-align: center;
     margin-bottom: 21px;
 }
 .footer_txt{
     font-size: 18px;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
     text-align: center;
     line-height: 24.51px;
     margin-bottom: 78px;
@@ -224,7 +219,6 @@ h1{
     color:white;
 }
 .footer_meadia_txt{
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     text-align: center;
     color:#828282;
