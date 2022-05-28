@@ -10,7 +10,10 @@ line-height:25px;
 font-size: 18px;
 }
 
-a{
+header a{
+    text-decoration: none;
+}
+footer a{
     text-decoration: none;
 }
 img{
