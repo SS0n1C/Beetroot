@@ -14,12 +14,9 @@ header a{
     text-decoration: none;
 }
 footer a{
-    text-decoration: none;
+      text-decoration: none;
 }
-img{
-    margin: 0px;
-    width:100%;
-}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -60,22 +57,28 @@ header nav {
 }
 .denis{
     padding-bottom: 100px;
+    position: relative;
 }
 h1{
     font-size: 47px;
     font-weight: 700;
     margin:34px 0 39px 0px; 
 }
+.black_back{
+    position: absolute;
+    z-index: -1;
+    transform: translate(6px, -3px);
+}
 .about_me{
     background-color:#F6F6F6;
     text-align: center;
+    padding-top: 100px;
+    
 }
 .about_h{
-    padding-top: 100px;
-  
     font-size: 34px;
     font-weight: 700;
-    padding-bottom: 28px;
+    line-height: 46.3px;
 }
 .about_txt{
     width: 480px;
@@ -84,16 +87,20 @@ h1{
     font-size: 18px;
     line-height: 25px;
     padding-bottom: 100px;
+
+    margin-top: 28px;
   
 }
 .about_txt_p{
     padding-bottom: 40px;
 }
+.about_txt_p span{
+    display: block;
+}
 .skills{
     margin: 100px auto 83px auto;
 }
 .skills_h{
- 
     font-size: 34px;
     font-weight: 700;
     text-align: center;
@@ -105,17 +112,13 @@ h1{
     line-height: 25px;
     text-align: center;
     margin-bottom: 79px;
-
-}
-.skills_program{
-    display: flex;
-    margin:0px 52px 0px 39px;
-    justify-content: space-between;
 }
 .skills_program_section{
-    display: flex;
-    flex-direction: column;
-    
+    display: inline-block;
+    margin-right: 86px;
+}
+.skills_program_section:last-child{
+    margin-right: 0px;
 }
 .skills_program_img{
     text-align: center;
@@ -139,6 +142,16 @@ h1{
     height: 27px;
     color:#828282;
 }
+.skills_program_star{
+    padding-bottom: 3px;
+}
+.skills_program_star span{
+    margin-right: 9px;
+}
+.skills_program_star span:last-child{
+    margin-right: 0px;
+}
+
 .portfolio{
     background-color: #F6F6F6;
 }
@@ -164,7 +177,9 @@ h1{
     font-weight: 400;
     margin-top: 15px;
     text-align: center;
-    
+}
+.portolio_link span{
+    display: block;
 }
 .portolio_link_reebok{
     font-size: 18px;
@@ -184,10 +199,12 @@ h1{
     width: 341px;
     height: 411px;
 }
-.footer_media{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 44px;
+.footer_link{
+    display: inline-block;
+    margin-right: 54px;
+}
+.footer_link:last-child{
+    margin-right: 0px;
 }
 .footer_h{
     font-size: 34px;
@@ -223,4 +240,8 @@ h1{
     font-size: 14px;
     text-align: center;
     color:#828282;
+    margin-top: 44px;
+}
+.footer_meadia_txt span{
+display: block;
 }
