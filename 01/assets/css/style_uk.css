@@ -90,7 +90,7 @@ h1{
     margin-bottom: 10px;
     color:darkslategray;
 }
-.work p{
+.company{
     margin-bottom: 25px;
 }
 .work span{
@@ -108,6 +108,7 @@ h1{
     font-size: 28px;
     background-color: lightsalmon;
     width: 200px;
+    margin-bottom: 30px;
 }
 .hobby .explanation{
     margin:10px 0px 10px 15px;
@@ -118,10 +119,9 @@ h1{
     font-weight: 600;
     text-decoration:underline;
     text-decoration-color:blue;
-}
-.hobby p{
     margin-bottom: 20px;
 }
+
 footer{
     margin:50px 0px 30px 50px;
 }
