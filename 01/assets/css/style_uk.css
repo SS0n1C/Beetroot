@@ -83,14 +83,21 @@ h1{
     margin-bottom: 10px;
     padding-left: 15px;
 }
+.work h2{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:darkslategray;
+}
 .work p{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .work span{
     display: block;
     margin:15px 0 15px 0;
 }
-.work dt{
+.work .company{
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -102,11 +109,11 @@ h1{
     background-color: lightsalmon;
     width: 200px;
 }
-.hobby dd{
+.hobby .explanation{
     margin:10px 0px 10px 15px;
     font-style: italic;
 }
-.hobby dt{
+.hobby .hobby_name{
     font-size: 18px;
     font-weight: 600;
     text-decoration:underline;
