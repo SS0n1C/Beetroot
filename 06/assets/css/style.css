@@ -46,7 +46,8 @@ footer{
     text-align: center;
     font-size: 15px;
 }
-.txt span{
+.txt a{
     color:#1ca9d2;
+    text-decoration: none;
 }
 
