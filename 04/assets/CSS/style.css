@@ -156,29 +156,25 @@ h1{
 
 .portfolio{
     background-color: #F6F6F6;
+    padding: 118px 0 102px;
 }
-.portolio_example{
- 
-}
-.portolio_example:last-child{
-  
-}
-.portfolio a{
-    color:black;
-}
-.portolio_h{
+.portfolio_h{
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-  
-   
+    line-height: 46px;
+    margin-bottom: 68px;
+}
+.portfolio a{
+    color:black;
 }
 .portolio_link{
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-   
+    margin-top: 16px;
     text-align: center;
+    margin-bottom: 129px;
 }
 .portolio_link span{
     display: block;
@@ -187,49 +183,59 @@ h1{
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-
+    margin-top: 8px;
     text-align: center;
+    margin-bottom: 137px;
 }
 .portolio_link_braun{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-  
+    line-height: 25px;
     text-align: center;
+    margin-top: 2px;
 }
 .footer_contacts{
-   
+   margin: 100px auto 159px auto;
+}
+.footer_media{
+    margin-top: 37px;
+    text-align: center;
 }
 .footer_link{
     display: inline-block;
-   
 }
-.footer_link:last-child{
-   
+.footer_img2{
+    margin: 0px 61px 0px 61px;
+}
+.footer_img4{
+    margin-left: 61px;
 }
 .footer_h{
     font-size: 34px;
     font-weight: 700;
     text-align: center;
+    line-height: 46px;
+    margin-bottom: 21px;
 
 }
 .footer_txt{
     font-size: 18px;
     font-weight: 400;
     text-align: center;
-    line-height: 24.51px;
-
+    line-height: 25px;
+    margin-bottom: 78px;
 
 }
 .footer_button{
     max-width: 180px;
     background-color: black;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 42px;
     font-weight: 700;
-    padding-top: 8px;
+    padding: 9px auto 8px auto;
 }
 .footer_button a{
     color:white;
@@ -238,7 +244,9 @@ h1{
 .footer_meadia_txt{
     font-size: 14px;
     text-align: center;
+    line-height: 19px;
     color:#828282;
+    margin-top: 64px;
 }
 .footer_meadia_txt span{
     display: block;
