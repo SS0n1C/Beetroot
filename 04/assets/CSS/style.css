@@ -19,96 +19,108 @@ main{
     margin: 0 auto;
 }
 header{
-    margin-top: 23px;
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
 }
 header a{
     color:#828282;
     text-decoration: none;
 }
-header nav ul{
-    margin-left: 0px;
-    padding-bottom: 29px;
+hr{
+    margin: 0px auto 0px auto;
 }
-header nav li{
+header nav ul{
     list-style: none;
-    margin-right: 41px;
-
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 29px;
+}
+.list_item{
+    margin: 0px 41px 0px 41px;
 }
 header nav  li:first-child a{
-    margin-right: 0px;
     color:black;
 }
 header nav ul li{
     display : inline-block;
 }
-header nav {
-  text-align: center;
-}
 .denis{
-    padding-bottom: 100px;
     position: relative;
 }
 h1{
     font-size: 47px;
     font-weight: 700;
-    margin:34px 0 39px 0px; 
+    line-height: 64px;
+    margin:34px 0 37px;
 }
 .black_back{
     position: absolute;
     z-index: -1;
     transform: translate(6px, -3px);
 }
+.foto{
+    margin-bottom: 100px;
+}
 .about_me{
     background-color:#F6F6F6;
     text-align: center;
     padding-top: 100px;
-    
+    padding-bottom: 100px;
 }
 .about_h{
     font-size: 34px;
     font-weight: 700;
     line-height: 46.3px;
+    margin-bottom: 28px;
 }
 .about_txt{
-    width: 480px;
     margin: 0 auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    padding-bottom: 100px;
-
-    margin-top: 28px;
-  
 }
 .about_txt_p{
-    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+.about_last{
+    margin-bottom: 0px;
 }
 .about_txt_p span{
     display: block;
 }
 .skills{
-    margin: 100px auto 83px auto;
+    padding: 100px 0px 83px ;
 }
 .skills_h{
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 35px;
+    line-height: 46px;
+    margin-bottom: 30px;
+    
 }
 .skills_txt{
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    margin-bottom: 79px;
+    margin-bottom: 78px;
+    
+}
+.adobe{
+    margin: 0px 90px 0px 90px;
+}
+.skills_program_txt span{
+    display: block;
 }
 .skills_program_section{
     display: inline-block;
-    margin-right: 86px;
+    line-height: 17px;
+    font-size: 14px;
+    color:#828282;
 }
 .skills_program_section:last-child{
-    margin-right: 0px;
+    margin-left: 90px;
+
 }
 .skills_program_img{
     text-align: center;
@@ -128,14 +140,15 @@ h1{
     margin-top: 22px;
     font-size: 17px;
     text-align: center;
-    margin-bottom: 59px;
     color:#828282;
+    margin-bottom: 60px;
 }
-.skills_program_star{
-    padding-bottom: 3px;
+.figma_txt{
+    padding-bottom: 17px;
 }
+
 .skills_program_star span{
-    margin-right: 9px;
+  margin-right: 9px;
 }
 .skills_program_star span:last-child{
     margin-right: 0px;
@@ -145,10 +158,10 @@ h1{
     background-color: #F6F6F6;
 }
 .portolio_example{
-    padding-bottom: 158px;
+ 
 }
 .portolio_example:last-child{
-    margin-bottom: 10px;
+  
 }
 .portfolio a{
     color:black;
@@ -157,14 +170,14 @@ h1{
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-    padding-top: 119px;
-    margin-bottom: 68px;
+  
+   
 }
 .portolio_link{
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    margin-top: 15px;
+   
     text-align: center;
 }
 .portolio_link span{
@@ -174,42 +187,41 @@ h1{
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    margin-top: 8px;
+
     text-align: center;
 }
 .portolio_link_braun{
     font-size: 14px;
     font-weight: 400;
-    margin-top: 1px;
+  
     text-align: center;
 }
 .footer_contacts{
-    margin: 100px auto 159px auto;
-    width: 341px;
+   
 }
 .footer_link{
     display: inline-block;
-    margin-right: 54px;
+   
 }
 .footer_link:last-child{
-    margin-right: 0px;
+   
 }
 .footer_h{
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 21px;
+
 }
 .footer_txt{
     font-size: 18px;
     font-weight: 400;
     text-align: center;
     line-height: 24.51px;
-    margin-bottom: 78px;
+
 
 }
 .footer_button{
-    width: 180px;
+    max-width: 180px;
     background-color: black;
     border-radius: 25px;
     margin: 0 auto;
@@ -218,8 +230,6 @@ h1{
     line-height: 26px;
     font-weight: 700;
     padding-top: 8px;
-    padding-bottom: 9px;
-    margin-bottom: 37px;
 }
 .footer_button a{
     color:white;
@@ -229,7 +239,6 @@ h1{
     font-size: 14px;
     text-align: center;
     color:#828282;
-    margin-top: 44px;
 }
 .footer_meadia_txt span{
     display: block;
