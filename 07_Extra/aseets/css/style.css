@@ -1,0 +1,57 @@
+body{
+    background-color: #3399CC;
+    font-size: 22px;
+    line-height: 26px;
+    color:#FFFFFF;
+}
+main{
+    border: 25px #2B81AC solid;
+}
+.conteiner{
+    max-width: 1116px;
+    margin: 0px auto;
+}
+.top_h{
+    margin-top: 66px;
+    font-size: 0px;
+    margin-bottom: 38px;
+}
+h2{
+    display: inline-block;
+    padding-right: 4px;
+    font-size: 21px;
+}
+.top_h img{
+    display: inline-block;
+    vertical-align: top; 
+}
+.weather_table{
+    font-size: 0;
+}
+.weather_table{
+    border: 2px white solid;
+}
+.section{
+    display: inline-block;
+    width: 25%;
+}
+.section_big{
+    display: inline-block;
+    width: 50%;  
+}
+.section_gigant{
+    width: 100%;   
+}
+.section_content{
+    border: 2px white solid;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 39px;
+}
+h3{
+    font-size: 22px;
+    margin-bottom: 19px;
+}
+h4{
+    font-size: 22px;
+}
