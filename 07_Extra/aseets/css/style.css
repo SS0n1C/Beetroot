@@ -26,7 +26,7 @@ h2{
     vertical-align: top; 
 }
 .weather_table{
-    font-size: 0;
+    font-size: 0px;
 }
 .weather_table{
     border: 2px white solid;
@@ -47,6 +47,7 @@ h2{
     text-align: center;
     padding-top: 26px;
     padding-bottom: 39px;
+    min-height: 100%;
 }
 h3{
     font-size: 22px;
