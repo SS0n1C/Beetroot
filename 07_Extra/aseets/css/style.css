@@ -25,34 +25,82 @@ h2{
     display: inline-block;
     vertical-align: top; 
 }
-.weather_table{
-    font-size: 0px;
-}
+
 .weather_table{
     border: 2px white solid;
+    font-size: 0px;
+    margin-bottom: 37px;
 }
 .section{
     display: inline-block;
     width: 25%;
+    min-height: 100%;
 }
 .section_big{
     display: inline-block;
     width: 50%;  
+    min-height: 100%;
 }
 .section_gigant{
     width: 100%;   
+    min-height: 100%;
 }
 .section_content{
     border: 2px white solid;
     text-align: center;
     padding-top: 26px;
     padding-bottom: 39px;
-    min-height: 100%;
 }
 h3{
     font-size: 22px;
-    margin-bottom: 19px;
+    margin-bottom: 4px;
 }
 h4{
     font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+.section_content img{
+    display: inline-block;
+    height: 40px;
+    
+}
+.lisbon{
+    background-color: #3399CC;
+}
+.paris{
+    background-color:#33CCCC;
+}
+.belgrade{
+background-color: #996699;
+}
+.venice {
+    background-color: #C24747;
+}
+.tel_avive{
+    background-color: #E2674A;
+}
+.cair{
+    background-color: #FFCC66;
+}
+.new_york{
+    background-color:#99CC99;
+}
+.new_delhi{
+    background-color: #669999;
+}
+.san_francisko{
+background-color: #CC6699;
+}
+.tokyo{
+    background-color: #339966;
+}
+.sidney{
+    background-color: #666699;
+}
+.bottom_txt{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 119px;
 }
