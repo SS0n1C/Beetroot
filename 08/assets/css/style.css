@@ -58,7 +58,8 @@ label{
   display: inline-block;
   width: 25px;
   height: 25px;
-  border: 1px solid #adb5bd;
+  border: 1px solid blue;
+  background-color: white;
   vertical-align: middle;
   border-radius: 0.25em;
   margin-right: 15px;
