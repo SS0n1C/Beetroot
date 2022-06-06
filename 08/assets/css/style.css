@@ -15,28 +15,40 @@ header{
 }
 input[type="checkbox"]{
     display:inline-block;
-    width:27px;
-    height:27px;
-    vertical-align:middle;
-    margin-right: 10px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
     cursor:pointer;
-
 }
 input:checked + label{
     text-decoration-line: line-through;
-    text-decoration-color: white;
-    opacity: 0.4;
+    text-decoration-color: white;  
+}
+input:checked + label .main_txt::before{
+   
 }
 label{
     cursor:pointer;
     display: inline-block;
-    width: 94%;
+    width: 100%;
+}
+.main_txt::before{
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #adb5bd;
+  vertical-align: middle;
+  border-radius: 0.25em;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 ul{
     margin:30px 0 45px;
 }
 ul li{
-    padding-left: 15px;
+    position: relative;
+    
 }
 li:nth-child(odd){
     background-color: #88839E;
@@ -70,18 +82,9 @@ background-color: #FF8984;
     line-height: 19px;
 }
 .main_txt{
-    line-height: 25px;
+    line-height: 60px;
     font-size: 24px;
     color:white;
-    padding: 18px 5px 15px 15px;
-}
-.second_txt::before{
-    content: "(";
-    padding-right: 2px;
-}
-.second_txt::after{
-    content: ")";
-    padding-left: 2px;
 }
 .second_txt{
     font-size: 18px;
