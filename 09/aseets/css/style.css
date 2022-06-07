@@ -1,0 +1,86 @@
+body{
+font-family: 'Tourney', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Farro', sans-serif;
+font-family: 'Francois One', sans-serif;
+font-family: 'PT Sans', sans-serif;
+line-height: 48px;
+font-size: 0px;
+font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+main{
+    margin-bottom: 90px;
+}
+.navigation{
+    display: inline-block;
+    font-family: 'Staatliches', cursive;
+    font-size: 22px;
+    line-height: 28px;
+    margin-right: 600px;
+
+}
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.lang{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 18px;
+    font-family:'Tourney', cursive;
+    margin-right: 60px;
+}
+.logo{
+    display: inline-block;
+    margin-top: 13px;
+}
+.nav_link{
+    display: inline-block;
+}
+.nav_link span{
+    margin: 0px 10px 0px 10px;
+}
+.section{
+    margin-top: 70px;
+}
+.section_h h1{
+    display: inline-block;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.section_h h2{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    font-weight: 300;
+}
+.section_txt{
+    margin-top: 40px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.section .underline{
+    text-decoration: underline;
+}
+.section .italic{
+    font-style: italic;
+}
+.section .weight{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.section .back{
+    background-color: #DADADA;
+}
