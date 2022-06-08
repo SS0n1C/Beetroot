@@ -15,6 +15,9 @@ a{
 main{
     margin-bottom: 90px;
 }
+.header{
+    margin-top: 13px;
+}
 .navigation{
     display: inline-block;
     font-family: 'Staatliches', cursive;
@@ -36,7 +39,6 @@ main{
 }
 .logo{
     display: inline-block;
-    margin-top: 13px;
 }
 .nav_link{
     display: inline-block;
@@ -47,20 +49,22 @@ main{
 .section{
     margin-top: 70px;
 }
-.section_h h1{
+.section_h h2{
     display: inline-block;
     font-family: 'Francois One', sans-serif;
     font-size: 36px;
     line-height: 48px;
     font-weight: 400;
     margin-right: 10px;
+    text-transform: uppercase;
 }
-.section_h h2{
+.section_h p{
     display: inline-block;
     font-size: 30px;
     line-height: 30px;
     vertical-align: top;
     font-weight: 300;
+    font-family: 'Farro', sans-serif;
 }
 .section_txt{
     margin-top: 40px;
@@ -68,12 +72,6 @@ main{
     font-size: 28px;
     line-height: 48px;
     font-weight: 400;
-}
-.section .underline{
-    text-decoration: underline;
-}
-.section .italic{
-    font-style: italic;
 }
 .section .weight{
     font-family: 'PT Sans', sans-serif;
