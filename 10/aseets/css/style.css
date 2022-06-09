@@ -56,6 +56,9 @@ input{
     margin-bottom: 50px;
     color: #2F281E;
 }
+.section_2_h>h2 span{
+    display: block;
+}
 .section_2_main_block{
     display: flex;
     justify-content: space-between;
