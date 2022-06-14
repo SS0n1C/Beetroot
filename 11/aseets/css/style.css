@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: #F7F7F7;
+}
+a{
+    text-decoration: none;
+    color: #007BFF;
+}
+select,option{
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+label{
+    cursor: pointer;
+}
+input{
+    border-radius: 5px;
+    border:1px rgba(228, 228, 228, 1) solid;
+    line-height: 32px;
+    font-size: 15px;
+    width: 245px;
+    cursor: pointer;
+}
+input::placeholder{
+    font-family: 'Inter', sans-serif;
+    opacity: 0.5;
+    color:black;
+    text-align: center;
+}
+
+input:focus{
+    border: 1px blue solid;
+}
+select{
+    width: 245px;
+    border-radius: 5px;
+    border:1px rgba(228, 228, 228, 1) solid;
+    line-height: 32px;
+    font-size: 15px;
+}
+input[type="email"]{
+    width:100%;
+}
+input[type="file"]{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+input[type="radio"]+label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+input[type="radio"]+label::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+input[type="radio"]:checked+label::before {
+   background-color: #0b76ef;
+   background-image: url("../img/icon.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+main{
+    display: flex;
+}
+.conteiner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.section{
+    margin-top: 55px;
+    width: 570px;
+    padding: 35px 35px 71px 36px;
+    background-color: white;
+    
+}
+.section_1{
+    margin-right: 30px;
+}
+.section_h{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color:#1C1C1C;
+}
+.name{
+    margin-bottom: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color:#545454;
+}
+.flex_box{
+    display: flex;
+    margin:20px 0px;
+    position: relative;
+    
+}
+.bottom_flex{
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.colum{
+    flex:1 1 auto;
+    width: 245px;
+}
+.colum_1{
+    margin-right: 10px;
+    width: 245px;
+}
+.colum_big{
+    width: 100%;
+}
+.coment{
+    margin-top: 7px;
+    color:rgba(150, 150, 150, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px; 
+}
+.radio_area{
+    margin-right: 21px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+.button{
+    width: 100%;
+    background-color: rgba(0, 123, 255, 1);
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Roboto';
+    color:white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.button:active{
+    background-color: grey;
+}
+.setion_txt{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #969696;
+}
+.bottom_link_1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 20px;
+}
+.bottom_link_1 a{
+    color: #545454;
+}
+.bottom_link_2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.del_box{
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    cursor: pointer;
+}
+.foto_area{
+    width: 138px;
+    height: 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 9px;
+}
+.small_colum{
+    margin:9px 10px 0px 20px;
+}
+.small_button{
+    width: 150px;
+}
+

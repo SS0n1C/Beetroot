@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="aseets/css/null.css">
+    <link rel="stylesheet" href="aseets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web form</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <main>
+            <section class="section section_1">
+                <div class="section_h">
+                    <h2>Create an Account</h2>
+                </div>
+                <form action="#" method="POST" id="section_1" autocomplete="off" >
+                    <input type="hidden" name="token" value="" form="section_1">
+                <div class="flex_box">
+                    <div class="colum colum_1">
+                        <div class="name"><label for="f_name">First Name</label></div>
+                        <div class="input_name"><input type="text" name="first_name" id="f_name" form="section_1"
+                            placeholder="Ivan" required></div>
+                    </div>
+                    <div class="colum">
+                        <div class="name"><label for="sec_name">Last Name</label></div>
+                        <div class="input_name"><input type="text" name="last_name" id="sec_name" form="section_1"
+                            placeholder="Ivanov" required></div>
+                    </div>
+                </div>
+                <div class="colum colum_big ">
+                    <div class="name"><label for="mail">E-mail</label></div>
+                    <div class="input_name"><input type="email" name="mail_section" id="mail" form="section_1"
+                        placeholder="Ivanov@gamil.com"  required></div>
+                    <div class="coment">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="flex_box">
+                    <div class="radio_area"><input type="radio" name="radio_dude" id="radio_button_1" value="Male" form="section_1" required>
+                        <label for="radio_button_1">Male</label>
+                    </div>
+                    <div class="radio_area"><input type="radio" name="radio_dude" id="radio_button_2" value="Female" form="section_1">
+                        <label for="radio_button_2">Female</label>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div class="colum">
+                        <div class="name"><label for="country">Country</label></div>
+                        <div class="input_name"><select name="country_section" id="country" form="section_1" required>
+                                <option value="">Select country...</option>
+                                <option value="Ukrain">Ukrain</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Peru">Peru</option>
+                            </select></div>
+                    </div>
+                    <div class="colum">
+                        <div class="name"><label for="city">City</label></div>
+                        <div class="input_name"><input type="text" name="city_section" id="city" form="section_1"
+                            placeholder="Kair" required></div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <button type="submit" class="button" name="button_section" form="section_1">Sign Up</button>
+                </div>
+            </form>
+                <div class="setion_txt">By clicking the 'Sign Up' button, you confirm that you accept our
+                    and .
+                    <div class="text_link">
+                        <a href="#" target="_blank" rel="nofollow noreferrer">Terms of Use</a>
+                        <span>and</span>
+                        <a href="#" target="_blank" rel="nofollow noreferrer">Privacy Policy</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex_box bottom_flex">
+                    <div class="bottom_link_1">
+                        Have an account?
+                    </div>
+                    <div class="bottom_link_2">
+                        <a href="#">Log In</a>
+                    </div>
+                </div>
+            </section>
+<!--Section 2-->
+            <section class="section">
+                <div class="section_h">
+                    <h2>Profile</h2>
+                </div>
+                <form action="#" method="POST" id="section_2" autocomplete="off" novalidate >
+                    <input type="hidden" name="token" value="" form="section_2">
+                <div class="flex_box">
+                    <div class="flex_foto"><img src="aseets/img/foto.png" alt="foto"></div>
+                    <div class="small_colum">
+                        <div class="foto_area"><input type="file" name="down_img" id="download" accept="image/*" form="section_2">
+                        <label for="download"><img src="aseets/img/Photo_Camera.png" alt="icon"></label>
+                        </div>
+                        <div class="coment">Up to 1 MB (300x300 px)</div>
+                    </div>
+                    <div class="del_box"><img src="aseets/img/Icon_del.png" alt="icon"></div>
+                </div>
+                <div class="flex_box">
+                    <div class="colum colum_1">
+                        <div class="name"><label for="name">Name</label></div>
+                        <div class="input_name"><input type="text" name="name_section_2" id="name"
+                            placeholder="Ivan"  form="section_2"></div>
+                    </div>
+                    <div class="colum">
+                        <div class="name"><label for="section_2_email">E-mail</label></div>
+                        <div class="input_name"><input type="email" name="email_section2" id="section_2_email"
+                            placeholder="Ivan@gmail.com"  form="section_2"></div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div class="colum colum_1">
+                        <div class="name"><label for="country_section_2">Country</label></div>
+                        <div class="input_name"><select name="country_section_2" id="country_section_2" form="section_2" >
+                                <option value="">Select country...</option>
+                                <option value="Ukrain">Ukrain</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Peru">Peru</option>
+                            </select></div>
+                    </div>
+                    <div class="colum">
+                        <div class="name"><label for="city_s2">City</label></div>
+                        <div class="input_name"><input type="text" name="city_section_2" id="city_s2"
+                            placeholder="Kair" form="section_2"></div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div class="colum colum_1">
+                        <div class="name"><label for="z_code">Zip Code</label></div>
+                        <div class="input_name"><input type="text" name="z_code_section_2" id="z_code"
+                            placeholder="3800" form="section_2"></div>
+                    </div>
+                    <div class="colum">
+                        <div class="name"><label for="ph_num">Phone Number</label></div>
+                        <div class="input_name"><input type="tel" name="tel_section_2" id="ph_num"
+                            placeholder="+380" required form="section_2"></div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <button type="submit" class="button small_button" form="section_2">Update</button>
+                </div>
+            </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
