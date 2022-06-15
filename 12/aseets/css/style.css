@@ -7,7 +7,13 @@ font-family: 'PT Sans', sans-serif;
 line-height: 48px;
 font-size: 0px;
 font-weight: 400;
+background-image: url("../img/bg-picture.png");
+background-repeat: no-repeat;
+background-position-x: 100%;
+background-position-y:150px;
+background-attachment: fixed;
 }
+
 img{
     padding: 0;
     margin: 0;
@@ -32,6 +38,7 @@ main{
     z-index: 1;
     padding: 16px 0px 70px 0px;
     top: 0px;
+    width:100%;
  }
 .navigation{
     display: inline-block;
@@ -41,8 +48,9 @@ main{
     margin-right: 600px;
 }
 .conteiner{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 90%;
 }
 
 .lang{
@@ -66,11 +74,38 @@ main{
 }
 .left_content{
     margin-top: 70px;
-    background-color: red;
-    height: 100%;
-    width:32%;
-    margin-right: 30px;
+    min-height: 100%;
+    width:32.4%;
+    margin-right: 2.2%;
 }
+.null{
+    margin: 0px;
+    height: 0px;
+
+}
+.sidebar{
+    padding: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top:160px;
+}
+.sidebar_section{
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 10px;
+    border-bottom:1px #BDBDBD solid;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.sidebar_section:last-of-type{
+    margin-bottom: 0px;
+}
+/* Text section*/
 .right_content{
     width: 65.4%;
     margin-top: 70px;
