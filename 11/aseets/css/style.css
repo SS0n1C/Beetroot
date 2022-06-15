@@ -103,7 +103,7 @@ main{
 }
 .section{
     margin-top: 55px;
-    width: 570px;
+    max-width: 570px;
     padding: 35px 35px 71px 36px;
     background-color: white;
 }
