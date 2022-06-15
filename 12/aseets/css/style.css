@@ -1,0 +1,125 @@
+body{
+font-family: 'Tourney', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Farro', sans-serif;
+font-family: 'Francois One', sans-serif;
+font-family: 'PT Sans', sans-serif;
+line-height: 48px;
+font-size: 0px;
+font-weight: 400;
+}
+img{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+main{
+    margin-bottom: 90px;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+.header_block{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    padding: 16px 0px 70px 0px;
+    top: 0px;
+ }
+.navigation{
+    display: inline-block;
+    font-family: 'Staatliches', cursive;
+    font-size: 22px;
+    line-height: 28px;
+    margin-right: 600px;
+}
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.lang{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 18px;
+    font-family:'Tourney', cursive;
+    margin-right: 60px;
+}
+.logo{
+    display: inline-block;
+}
+.nav_link{
+    display: inline-block;
+}
+.nav_link span{
+    margin: 0px 10px 0px 10px;
+}
+.content{
+    display: flex;
+}
+.left_content{
+    margin-top: 70px;
+    background-color: red;
+    height: 100%;
+    width:32%;
+    margin-right: 30px;
+}
+.right_content{
+    width: 65.4%;
+    margin-top: 70px;
+}
+.section{
+    margin-top: 70px;
+    padding-top: 28px;
+    position: relative;
+}
+.section:first-of-type{
+    margin-top: 0px;
+}
+.title_border{
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    background-color:black;
+    top:0;
+}
+.section_h h2{
+    display: inline-block;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 400;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.section_h p{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    font-weight: 300;
+    font-family: 'Farro', sans-serif;
+}
+.section_txt{
+    margin-top: 40px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.section .weight{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.section .back{
+    background-color: #DADADA;
+}
