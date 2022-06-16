@@ -1,160 +1,160 @@
 body{
-font-family: 'Tourney', cursive;
-font-family: 'Staatliches', cursive;
-font-family: 'Farro', sans-serif;
-font-family: 'Francois One', sans-serif;
-font-family: 'PT Sans', sans-serif;
-line-height: 48px;
-font-size: 0px;
-font-weight: 400;
-background-image: url("../img/bg-picture.png");
-background-repeat: no-repeat;
-background-position-x: 100%;
-background-position-y:150px;
-background-attachment: fixed;
-}
-
-img{
-    padding: 0;
-    margin: 0;
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-main{
-    margin-bottom: 90px;
-}
-.header{
-    position: relative;
-    width: 100%;
-    height: 80px;
-}
-.header_block{
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: white;
-    z-index: 1;
-    padding: 16px 0px 70px 0px;
-    top: 0px;
-    width:100%;
- }
-.navigation{
-    display: inline-block;
+    font-family: 'Tourney', cursive;
     font-family: 'Staatliches', cursive;
-    font-size: 22px;
-    line-height: 28px;
-    margin-right: 600px;
-}
-.conteiner{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-}
-
-.lang{
-    display: inline-block;
-    font-size: 22px;
-    line-height: 18px;
-    font-family:'Tourney', cursive;
-    margin-right: 60px;
-}
-.logo{
-    display: inline-block;
-}
-.nav_link{
-    display: inline-block;
-}
-.nav_link span{
-    margin: 0px 10px 0px 10px;
-}
-.content{
-    display: flex;
-}
-.left_content{
-    margin-top: 70px;
-    min-height: 100%;
-    width:32.4%;
-    margin-right: 2.2%;
-}
-.null{
-    margin: 0px;
-    height: 0px;
-
-}
-.sidebar{
-    padding: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    position: sticky;
-    top:160px;
-}
-.sidebar_section{
-    font-family: 'Francois One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 48px;
-    padding-bottom: 10px;
-    border-bottom:1px #BDBDBD solid;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 70px;
-}
-.sidebar_section:last-of-type{
-    margin-bottom: 0px;
-}
-/* Text section*/
-.right_content{
-    width: 65.4%;
-    margin-top: 70px;
-}
-.section{
-    margin-top: 70px;
-    padding-top: 28px;
-    position: relative;
-}
-.section:first-of-type{
-    margin-top: 0px;
-}
-.title_border{
-    position: absolute;
-    width: 100px;
-    height: 8px;
-    background-color:black;
-    top:0;
-}
-.section_h h2{
-    display: inline-block;
-    font-family: 'Francois One', sans-serif;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 400;
-    margin-right: 10px;
-    text-transform: uppercase;
-}
-.section_h p{
-    display: inline-block;
-    font-size: 20px;
-    line-height: 20px;
-    vertical-align: top;
-    font-weight: 300;
     font-family: 'Farro', sans-serif;
-}
-.section_txt{
-    margin-top: 40px;
+    font-family: 'Francois One', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    font-size: 28px;
     line-height: 48px;
+    font-size: 0px;
     font-weight: 400;
-}
-.section .weight{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 28px;
-    line-height: 48px;
-    font-weight: 700;
-}
-.section .back{
-    background-color: #DADADA;
-}
+    background-image: url("../img/bg-picture.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y:150px;
+    background-attachment: fixed;
+    }
+    
+    img{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    main{
+        margin-bottom: 90px;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        height: 80px;
+    }
+    .header_block{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        padding: 16px 0px 70px 0px;
+        top: 0px;
+        width:100%;
+     }
+    .navigation{
+        display: inline-block;
+        font-family: 'Staatliches', cursive;
+        font-size: 22px;
+        line-height: 28px;
+        margin-right: 600px;
+    }
+    .conteiner{
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .lang{
+        display: inline-block;
+        font-size: 22px;
+        line-height: 18px;
+        font-family:'Tourney', cursive;
+        margin-right: 60px;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .nav_link{
+        display: inline-block;
+    }
+    .nav_link span{
+        margin: 0px 10px 0px 10px;
+    }
+    .content{
+        display: flex;
+    }
+    .left_content{
+        margin-top: 70px;
+        min-height: 100%;
+        width:32.4%;
+        margin-right: 2.2%;
+    }
+    .null{
+        margin: 0px;
+        height: 0px;
+    
+    }
+    .sidebar{
+        padding: 10px;
+        position: sticky;
+        position: -webkit-sticky;
+        position: sticky;
+        top:160px;
+    }
+    .sidebar_section{
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 10px;
+        border-bottom:1px #BDBDBD solid;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+    .sidebar_section:last-of-type{
+        margin-bottom: 0px;
+    }
+    /* Text section*/
+    .right_content{
+        width: 65.4%;
+        margin-top: 70px;
+    }
+    .section{
+        margin-top: 70px;
+        padding-top: 28px;
+        position: relative;
+    }
+    .section:first-of-type{
+        margin-top: 0px;
+    }
+    .title_border{
+        position: absolute;
+        width: 100px;
+        height: 8px;
+        background-color:black;
+        top:0;
+    }
+    .section_h h2{
+        display: inline-block;
+        font-family: 'Francois One', sans-serif;
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 400;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+    .section_h p{
+        display: inline-block;
+        font-size: 20px;
+        line-height: 20px;
+        vertical-align: top;
+        font-weight: 300;
+        font-family: 'Farro', sans-serif;
+    }
+    .section_txt{
+        margin-top: 40px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 28px;
+        line-height: 48px;
+        font-weight: 400;
+    }
+    .section .weight{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 28px;
+        line-height: 48px;
+        font-weight: 700;
+    }
+    .section .back{
+        background-color: #DADADA;
+    }
