@@ -13,7 +13,6 @@ body{
     background-position-y:150px;
     background-attachment: fixed;
     }
-    
     img{
         padding: 0;
         margin: 0;
@@ -36,7 +35,7 @@ body{
         position: fixed;
         background-color: white;
         z-index: 1;
-        padding: 16px 0px 70px 0px;
+        padding: 16px 0px 16px 0px;
         top: 0px;
         width:100%;
      }
@@ -109,11 +108,19 @@ body{
     .right_content{
         width: 65.4%;
         margin-top: 70px;
+        padding-bottom: 90px;
     }
     .section{
         margin-top: 70px;
         padding-top: 28px;
         position: relative;
+    }
+    .section>.anchor{
+        display: block;
+        position: absolute;
+        top:-85px;
+        z-index: -1;
+        
     }
     .section:first-of-type{
         margin-top: 0px;
