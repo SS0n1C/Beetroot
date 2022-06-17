@@ -103,7 +103,6 @@ a{
 .cart_section:hover .cart_block .cart_block_back img{
     transform: rotate(180deg);
 }   
-
 .cart_block_front, .cart_block_back{
     position: absolute;
     width: 100%;
