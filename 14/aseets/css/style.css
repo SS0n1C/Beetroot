@@ -45,6 +45,8 @@
     transform-style: preserve-3d;
 }
 .card--1{
+    -moz-animation: rotet 4s 0s;
+    -webkit-animation: rotet 4s 0s;
     animation: rotet 4s 0s;
 }
 @keyframes rotet{
@@ -59,6 +61,8 @@
     }
 }
 .card--2{
+    -moz-animation: rotet 4s 4s;
+    -webkit-animation: rotet 4s 4s;
     animation: rotet 4s 4s;
 }
 @keyframes rotet{
@@ -73,6 +77,8 @@
     }
 }
 .card--3{
+    -moz-animation: rotet 4s 8s;
+    -webkit-animation: rotet 4s 8s;
     animation: rotet 4s 8s;
 }
 @keyframes rotet{
@@ -87,6 +93,8 @@
     }
 }
 .card--4{
+    -moz-animation: rotet 4s 12s;
+    -webkit-animation: rotet 4s 12s;
     animation: rotet 4s 12s;
 }
 @keyframes rotet{
@@ -101,6 +109,8 @@
     }
 }
 .card--5{
+    -moz-animation: rotet 4s 16s;
+    -webkit-animation: rotet 4s 16s;
     animation: rotet 4s 16s;
 }
 @keyframes rotet{
@@ -115,6 +125,8 @@
     }
 }
 .card--6{
+    -moz-animation: rotet 4s 20s;
+    -webkit-animation: rotet 4s 20s;
     animation: rotet 4s 20s;
 }
 @keyframes rotet{
