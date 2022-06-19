@@ -141,7 +141,7 @@
     padding: 5px;
     background-color: rgb(153, 4, 4);
 }
-.rotate-area:hover .main-field{
+.rotate-area:hover{
     transform: rotatey(180deg);
 }
 .rotate-area__front, .rotate-area__back{
