@@ -132,7 +132,7 @@ img{
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-.staff-block__visual-field:hover .rotate-area{
+.card-field:hover .rotate-area{
     transform: rotatey(180deg);
 }
 .rotate-area__front, .rotate-area__back{
