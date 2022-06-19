@@ -31,7 +31,6 @@
     column-gap: 10px;
     row-gap: 20px;
     justify-content: center;
-
 }
 .card-field{
     width: 240px;
@@ -42,8 +41,92 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
+}
+.card--1{
+    animation: rotet 4s 0s;
+}
+@keyframes rotet{
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(0deg);
+    }
+}
+.card--2{
+    animation: rotet 4s 4s;
+}
+@keyframes rotet{
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(0deg);
+    }
+}
+.card--3{
+    animation: rotet 4s 8s;
+}
+@keyframes rotet{
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(0deg);
+    }
+}
+.card--4{
+    animation: rotet 4s 12s;
+}
+@keyframes rotet{
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(0deg);
+    }
+}
+.card--5{
+    animation: rotet 4s 16s;
+}
+@keyframes rotet{
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(0deg);
+    }
+}
+.card--6{
+    animation: rotet 4s 20s;
+}
+@keyframes rotet{
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(0deg);
+    }
 }
 .rotate-are__front--img{
     width: 100%;
@@ -58,7 +141,7 @@
     padding: 5px;
     background-color: rgb(153, 4, 4);
 }
-.rotate-area:hover{
+.rotate-area:hover .main-field{
     transform: rotatey(180deg);
 }
 .rotate-area__front, .rotate-area__back{
