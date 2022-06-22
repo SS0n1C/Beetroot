@@ -95,6 +95,7 @@ font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     padding: 40px;
     max-width: 370px;
+    transition: ease 0.5s;
 }
 .content-box__block:hover{
     border-color: #3DB370;
@@ -109,6 +110,10 @@ font-family: 'Roboto', sans-serif;
     border: 1px rgba(21, 101, 216, 0.1) solid;
     border-radius: 16px;
     margin-bottom: 30px;
+    transition: ease 0.5s;
+}
+.content-box__block:hover .block__img{
+    border-color: rgba(61, 179, 112, 0.1);
 }
 .mega-icon svg path:nth-child(10){
     fill: #007FFC;
