@@ -1,0 +1,410 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Red Hat Display', sans-serif;*/
+a{
+    color:#000000;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    flex:1 1 auto;
+}
+/*header*/
+.header-block{
+    display: flex;
+    padding: 40px 0px;
+    
+}
+.header__nav{
+    margin: 0px 84px 0px 428px;
+}
+.nav-field{
+    display: flex;
+}
+.header__nav--link{
+    display: flex;
+    position: relative;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+.header__nav--link{
+    margin-right: 42px;
+}
+.header__nav--link:last-of-type{
+    margin-right: 0px;  
+}
+.header__nav--link:hover .header__nav--border{
+    display: inline-block;
+}
+.header__nav--border{
+    display: none;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    position: absolute;
+    top:20px;
+    width:65%;
+    height: 1px;
+    background-color: black;
+}
+.header__nav--link span{
+    letter-spacing: 0em;
+}
+/* 1 section*/
+.title-section{
+    background-image: url("../img/bg-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 600px;
+    padding: 100px 0px 380px 0px;
+}
+.section__title{
+    padding: 0px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+}
+/*2 section*/
+.section-blog{
+    margin: 90px 0px;
+}
+.section-blog__h{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    
+}
+.section-blog__content-box{
+    display: flex;
+    margin-top: 50px;
+}
+.section-blog__content-box--content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 30px;
+    padding-right: 120px;
+}
+.section-blog__content-box--img{
+    width: 50%;
+}
+.content__subtitle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+    margin-bottom: 30px;
+}
+.content__title{
+    font-family: 'Red Hat Display';    
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+.content__date{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+    margin-bottom: 50px;
+}
+.content__txt{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #565656;
+    position: relative;
+}
+.hide-link{
+    margin:0px 5px 0px 5px;
+    position: absolute;
+    bottom: 0px;
+    visibility: hidden;  
+}
+.hide-link::after{
+    position: absolute;
+    right:60px;
+    visibility: visible;
+    content: url("../img/arow.png");
+    display: inline-block;
+    margin-left: 8px;
+    width: 23px;
+    height: 1px;
+}
+.hide-link:hover{
+    visibility: visible;
+}
+.hide-link:hover:after{
+    left: 80px;
+    content: url("../img/Arrow_black.png");
+}
+/*section 3*/
+.section__title{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 50px;
+}
+.section-latest__title--h{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+}
+.section__title--link{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+.section__title a{
+    color: #7B7B7B;
+}
+.section__title--link::after{
+    visibility: visible;
+    content: url("../img/arow.png");
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 23px;
+    width: 1px;
+    height: 1px;
+    transition: all 0.3s ease;
+}
+.section__title a:hover{
+    color:black;
+}
+.section__title--link:hover:after{
+    content: url("../img/Arrow_black.png");
+}
+.article-field{
+    display: flex;
+    justify-content: space-between;
+}
+.article-section{
+    max-width: 370px;
+}
+.article-section__img{
+    height: 260px;
+}
+.article-section__sub-field{
+    margin:25px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+}
+.article-section__sub-field a{
+    color: #7B7B7B;
+}
+.article-section__h{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.article-section__txt{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+/*section 4*/
+.section-popular{
+    margin-top: 90px;
+}
+.popular-section{
+    max-width: 570px;
+}
+.popular__sub-field{
+    margin:20px 0px;
+}
+.button_field{
+    margin-top: 50px;
+    text-align: center; 
+}
+.button{
+    padding: 10px 45px;
+    text-align: center;
+    background-color: #565656;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 166.3%;
+    letter-spacing: 0.1em;
+    color:white;     
+}
+.button:hover{
+    background-color: #323232;
+}
+/*section 5*/
+.section-info{
+    margin: 90px 0px;
+}
+.info-field{
+    display: flex;
+    justify-content: space-between;
+}
+.info-field__link{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    width: 470px;
+    position: relative;
+}
+.info-field__txt{
+    width: 470px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+.info-field__txt p{
+    margin-bottom: 30px;
+}
+.hide-link__info{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166.3%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    position: absolute;
+    visibility: hidden;
+}
+.hide-link__info::after{
+    display: inline-block;
+    left: 0px;
+    visibility:visible;
+    position: absolute;
+    content: url("../img/arow.png");
+}
+.hide-link__info:hover{
+    visibility: visible;
+}
+.hide-link__info:hover::after{
+    left:100px;
+    content: url("../img/Arrow_black.png");
+}
+/*footer*/
+.footer{
+    background-color: #F4F4F4;
+}
+.footer-field{
+    margin: 70px 0px 30px;
+    display: flex;
+}
+.footer__contact--txt{
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+.footer__contact{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+.footer__contact-mail{
+    margin-bottom: 0px;
+}
+.footer__copy{
+    margin: 0px 160px 0px 60px ;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+.footer__social{
+    display: flex;
+    align-items: center;
+}
+.footer__social a{
+    margin-right:23px;
+}
+.footer__social a:last-of-type{
+    margin-right: 0px;
+}
+.social__field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px #565656 solid;
+}
+
+.social__field svg{
+    fill:#565656;
+}
+.social__field:hover svg{
+    fill:white;
+}
+.social__field:hover{
+    background-color: #565656;
+}
