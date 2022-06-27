@@ -113,7 +113,7 @@ img{
             position: relative;
             /*media*/
             @include media($big){
-                margin:50px 50px 50px auto;
+                margin:40px 40px 40px auto;
             }
             @include media($small){
                 margin: 10px;
