@@ -1,3 +1,282 @@
-body{
-    background-color: red;
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+@import "null.scss";
+@import "variable.scss";
+@import "mixin.scss";
+img{
+    width: 100%;
+    height: 100%;
+}
+/*header*/
+.conteiner{
+   @include conteiner(1170px);
+    /*media*/
+    @include media($big){
+        @include conteiner(900px);
+    }
+    @include media($medium){
+        @include conteiner(650px);
+    }
+    @include media($small){
+        @include conteiner(400px);
+    }  
+    @include media($litle){
+        width: 100%;
+        padding: 0px 10px;
+        margin: 0 auto;
+    }
+}
+.header-block{
+    text-align: center;
+    text-transform: uppercase;
+
+    &__subtitle{
+        margin-bottom: 15px;
+        @include font($raleway,500,18px,24px,$subtitle);
+        /*media*/
+        @include media($big){
+            font-size: 15px
+        }
+        @include media($medium){
+            margin-bottom: 10px
+        }
+        @include media($small){
+            font-size: 14px;
+            margin-bottom: 5px
+        }   
+    }
+   
+    &__title{
+        @include font($roboto,900,60px,66px,$gold);
+        /*media*/
+        @include media($big){
+            font-size: 55px;
+        }
+        @include media($medium){
+            @include font($roboto,900,40px,45px,$gold);
+        }
+        @include media($small){
+            @include font($roboto,900,30px,40px,$gold);
+            
+        }   
+        
+    }
+    &__fire{
+        margin:40px 5px 0px 5px;
+       @include flex;
+       /*meadia*/
+       @include media($medium){
+        margin-top: 30px;
+       }
+       @include media($small){
+        margin-top:20px;
+    }
+    }
+    
+    &__line{
+        @include line(18%);
+        /*media*/
+        @include media($big){
+            width: 25%;
+        }
+        @include media($medium){
+            width: 35%;
+        }
+        @include media($small){
+            width: 40%;
+        }
+    }
+}
+/*main*/
+.main-field{
+    margin-top: 40px;
+    @include flex;
+    
+    /*media*/
+    @include media($medium){
+        margin-top: 20px; 
+    }
+    @include media($small){
+        flex-direction: column;
+    }
+    &__left{
+        width: 49.9%;
+        /*media*/
+        @include media($small){
+            width:80%;
+        }
+        
+        .border-area{
+            margin:65px 150px 65px auto;
+            padding: 15px;
+            position: relative;
+            /*media*/
+            @include media($big){
+                margin:50px 50px 50px auto;
+            }
+            @include media($small){
+                margin: 10px;
+            }
+            .corner--1{
+                 position: absolute;
+                 top:0;
+                 left:0;
+            }
+            .corner--2{
+                position: absolute;
+                top:0;
+                right: 0;
+            }
+            .corner--3{
+                position: absolute;
+                bottom:0;
+                right:0;
+           }
+           .corner--4{
+               position: absolute;
+               bottom:0;
+               left:0;
+           }
+            
+        }  
+    }
+    &__midle{
+        @include lineY(560px);
+        /*media*/
+        @include media($medium){
+            @include lineY(360px);
+        }
+        @include media($small){
+            display: none;
+        }
+    }
+    &__right{
+        width: 49.9%; 
+        /*media*/
+        @include media($small){
+            width:80%;
+        }
+        @include media($litle){
+            width:90%;
+        }
+    }
+    .right{
+        @include flex;
+        flex-direction: column;
+        margin:40px 30px 40px 30px;
+        /*media*/
+        @include media($big){
+            margin:20px 20px 30px 30px;
+        }
+        @include media($small){
+            margin:20px 20px 20px 20px;
+        }
+        @include media($litle){
+            margin:10px 10px 10px 10px;
+        }
+
+        &__title{
+            @include font($roboto,900,36px,42px,$grey);
+            @include margb(30px);
+            /*media*/
+            @include media($big){
+                @include font($roboto,900,27px,36px,$grey);
+                @include margb(20px)
+            }
+            @include media($small){
+                @include margb(10px)
+            }
+        }
+        &__line{
+            @include line(100px);
+            @include margb(30px);
+            /*media*/
+            @include media($big){
+                @include margb(20px);
+            }
+            @include media($small){
+                @include margb(10px);
+            }
+        }
+        &__subtitle{
+            @include font($raleway,400,24px,36px,$grey);
+            @include margb(30px);
+            /*media*/
+            @include media($big){
+                @include font($raleway,400,20px,28px,$grey);
+                @include margb(20px);
+            }
+            @include media($small){
+                @include margb(10px)
+            }
+        }
+        &__social{
+            @include flex;
+            @include margb(50px);
+            /*media*/
+            @include media($big){
+                @include margb(30px);
+            }
+            @include media($small){
+                @include margb(20px)
+            }
+            .social__item{
+                @include flex;
+                border: 1px $ccolor solid;
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                &:hover{
+                    background-color: gold;
+                } 
+            }
+            .zero-margin{
+                margin-right: 0px;
+            }
+            .social__item svg{
+                fill:$ccolor;
+            }
+            .social__item:hover.social__item svg{
+                fill:red;
+            }
+        }
+        &__txt{
+            @include font($raleway,500,14px,24px,$litegrey);
+            text-align: center;
+            @include margb(20px);
+            /*media*/
+            @include media($big){
+                @include font($raleway,500,13px,20px,$litegrey);
+            }
+        }
+        .right__blocks{
+            @include flex;
+            @include margb(25px);
+            .right__block{
+                height: 4px;
+                background-color: $gold;
+                width: 10px;
+            }
+            .midle-block{
+                margin: 0px 5px;
+                width: 20px;
+            }
+        }
+        &__button{
+            border: 1px $gold solid;
+            .button__title{
+                padding: 5px 10px;
+            }
+            &:hover{
+                background-color: $gold;
+            }
+        }
+        &__button a{
+            @include font($open,700,14px,14px,$grey);
+            text-transform: uppercase;
+        }
+    }   
+    
 }
