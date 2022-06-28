@@ -687,6 +687,7 @@ img{
 .footer-field{
     margin: 70px 0px 30px;
     display: flex;
+    justify-content: space-between;
 }
 .footer__contact--txt{
     font-family: 'Red Hat Display';
@@ -745,7 +746,13 @@ img{
 .social__field:hover{
     background-color: #565656;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1400px){
+    .footer__copy{
+        margin: 0px 80px 0px 20px ;
+    }
+}
+  
+@media screen and (max-width:1200px){
     .footer-field{
         flex-direction: column;
         margin: 50px 0px;
