@@ -747,7 +747,7 @@ img{
     }
     .footer__social{
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
 }
@@ -759,6 +759,4 @@ img{
     .footer__info{
          margin-bottom: 40px;
 }
-}   .footer__social{
-        margin-bottom: 40px;
-}
+
