@@ -1,4 +1,4 @@
-/*mix*/
+
 @mixin conteiner($w){
     max-width: $w;
     margin: 0 auto;
@@ -10,6 +10,10 @@
     font-size: $fs;
     line-height: $lh;
     color:$fc;
+}
+@mixin fontsize($s,$l){
+    font-size: $s;
+    line-height: $l;  
 }
 @mixin media($m){
     @media (max-width: $m){
