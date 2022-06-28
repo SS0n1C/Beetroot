@@ -281,7 +281,6 @@ img{
     bottom: 0px;
     visibility: hidden;  
 }
-
 .hide-link::after{
     position: absolute;
     right:60px;
@@ -291,11 +290,13 @@ img{
     margin-left: 8px;
     width: 23px;
     height: 1px;
+    transition: all 0.6s ease;
 }
 .hide-link:hover{
     visibility: visible;
 }
 .hide-link:hover:after{
+    
     left: 80px;
     content: url("../img/Arrow_black.png");
 }
@@ -524,7 +525,7 @@ img{
   max-width: 570px;
   
 }
-.f_sec{
+.f__sec{
     margin-right: 30px;
 }
 .popular-section__area{
@@ -561,7 +562,7 @@ img{
     .article-section__img{
         width: 100%;
     }
-    .f_sec{
+    .f__sec{
         margin-right: 20px;
     }
 }
@@ -569,6 +570,9 @@ img{
     .popular-section__area{
         display: flex;
         flex-wrap: wrap;
+    }
+    .f__sec{
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width:420px) {
@@ -637,6 +641,7 @@ img{
     color: #000000;
     position: absolute;
     visibility: hidden;
+    
 }
 .hide-link__info::after{
     display: inline-block;
@@ -644,6 +649,7 @@ img{
     visibility:visible;
     position: absolute;
     content: url("../img/arow.png");
+    transition: 0.4s;
 }
 .hide-link__info:hover{
     visibility: visible;
@@ -736,6 +742,7 @@ img{
     width: 50px;
     height: 50px;
     border: 1px #565656 solid;
+    transition: 0.4s;
 }
 .social__field svg{
     fill:#565656;
