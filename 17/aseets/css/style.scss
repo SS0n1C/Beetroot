@@ -1,15 +1,15 @@
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;*/
-@import "null.scss";
-@import "variable.scss";
-@import "mixin.scss";
 img{
     width: 100%;
     height: 100%;
 }
 
 /*header*/
+.wrapper{
+    margin: 120px 0px;
+}
 .conteiner{
    @include conteiner(1170px);
     /*media*/
