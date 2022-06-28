@@ -7,9 +7,6 @@ img{
 }
 
 /*header*/
-.wrapper{
-    margin: 120px 0px;
-}
 .conteiner{
    @include conteiner(1170px);
     /*media*/
@@ -31,13 +28,17 @@ img{
 .header-block{
     text-align: center;
     text-transform: uppercase;
+    margin-top: 120px;
+    @include media($medium){
+        margin-top: 60px;
+    }
 
     &__subtitle{
         margin-bottom: 15px;
         @include font($raleway,500,18px,24px,$subtitle);
         /*media*/
         @include media($big){
-            font-size: 15px
+            @mixin fontsize(64px);
         }
         @include media($medium){
             margin-bottom: 10px
@@ -92,6 +93,13 @@ img{
 /*main*/
 .main-field{
     margin-top: 40px;
+    margin-bottom: 120px;
+    @include media($medium){
+        margin-bottom: 60px;
+    }
+    @include media($litle){
+        margin-bottom: 20px;
+    }
     @include flex;
     
     /*media*/
@@ -229,6 +237,7 @@ img{
                 width: 30px;
                 height: 30px;
                 margin-right: 5px;
+                transition: 0.4s;
                 &:hover{
                     background-color: gold;
                 } 
@@ -270,6 +279,7 @@ img{
             border: 1px $gold solid;
             .button__title{
                 padding: 5px 10px;
+                transition: 0.4s;
             }
             &:hover{
                 background-color: $gold;
