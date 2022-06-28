@@ -1,2 +1,11 @@
-/*font-family: 'Lato', sans-serif;
-font-family: 'Red Hat Display', sans-serif;*/
+body{
+    background-color:green;
+}
+@mixin color {
+    background-color: blue;
+    
+}
+.test{
+    @include color;
+    @include fontsize(56px,28px);
+}
