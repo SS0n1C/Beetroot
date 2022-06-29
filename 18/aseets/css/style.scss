@@ -1,7 +1,9 @@
 body{
     background-color:green;
 }
-@mixin color {
-    background-color: blue;
-    
+.test{
+    font-size: 80px;
+    @include color;
 }
+
+/*dfg*/
