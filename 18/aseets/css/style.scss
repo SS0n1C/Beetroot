@@ -5,7 +5,3 @@ body{
     background-color: blue;
     
 }
-.test{
-    @include color;
-    @include fontsize(56px,28px);
-}
