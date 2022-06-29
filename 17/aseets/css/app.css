@@ -125,6 +125,11 @@ img {
     margin-top: 60px;
   }
 }
+@media (max-width: 560px) {
+  .header-block {
+    margin-top: 60px;
+  }
+}
 .header-block__subtitle {
   margin-bottom: 15px;
   font-family: "Raleway", sans-serif;
@@ -150,24 +155,19 @@ img {
 @media (max-width: 991px) {
   .header-block__title {
     font-size: 55px;
+    line-height: 60px;
   }
 }
 @media (max-width: 767px) {
   .header-block__title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
     font-size: 40px;
     line-height: 45px;
-    color: #FFCC00;
   }
 }
 @media (max-width: 560px) {
   .header-block__title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
     font-size: 30px;
     line-height: 40px;
-    color: #FFCC00;
   }
 }
 .header-block__fire {
@@ -349,11 +349,8 @@ img {
 }
 @media (max-width: 991px) {
   .main-field .right__title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
     font-size: 27px;
     line-height: 36px;
-    color: #666666;
     margin-bottom: 20px;
   }
 }
@@ -390,11 +387,8 @@ img {
 }
 @media (max-width: 991px) {
   .main-field .right__subtitle {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #666666;
     margin-bottom: 20px;
   }
 }
@@ -455,11 +449,8 @@ img {
 }
 @media (max-width: 991px) {
   .main-field .right__txt {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
     font-size: 13px;
     line-height: 20px;
-    color: #333333;
   }
 }
 .main-field .right .right__blocks {
@@ -495,6 +486,4 @@ img {
   line-height: 14px;
   color: #666666;
   text-transform: uppercase;
-}
-
-/**//*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */

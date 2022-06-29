@@ -4,4 +4,9 @@
 @import "mixin.scss";
 @import "style.scss";
 
-
+body{
+    @include color;
+}
+.test{
+    @include fontsize(49px,100px);
+}

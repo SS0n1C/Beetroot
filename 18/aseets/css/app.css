@@ -72,10 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: green;
+  background-color: red;
 }
 
 .test {
-  font-size: 80px;
-  background-color: yellowgreen;
+  font-size: 49px;
+  line-height: 100px;
 }/*# sourceMappingURL=app.css.map */

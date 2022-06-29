@@ -38,3 +38,6 @@
 @mixin margb($marg) {
     margin-bottom: $marg;  
 }
+@mixin color {
+    background-color: red;
+}

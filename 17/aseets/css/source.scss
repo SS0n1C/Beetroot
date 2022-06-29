@@ -32,6 +32,9 @@ img{
     @include media($medium){
         margin-top: 60px;
     }
+    @include media($small){
+        margin-top: 60px;
+    }
 
     &__subtitle{
         margin-bottom: 15px;
@@ -46,13 +49,13 @@ img{
         @include font($roboto,900,60px,66px,$gold);
         /*media*/
         @include media($big){
-            font-size: 55px;
+        @include fontsize(55px,60px);
         }
         @include media($medium){
-            @include font($roboto,900,40px,45px,$gold);
+            @include fontsize(40px,45px);
         }
         @include media($small){
-            @include font($roboto,900,30px,40px,$gold);
+            @include fontsize(30px,40px);
             
         }   
         
@@ -183,7 +186,7 @@ img{
             @include margb(30px);
             /*media*/
             @include media($big){
-                @include font($roboto,900,27px,36px,$grey);
+                @include fontsize(27px,36px);
                 @include margb(20px)
             }
             @include media($small){
@@ -206,7 +209,7 @@ img{
             @include margb(30px);
             /*media*/
             @include media($big){
-                @include font($raleway,400,20px,28px,$grey);
+                @include fontsize(20px,28px);
                 @include margb(20px);
             }
             @include media($small){
@@ -251,7 +254,7 @@ img{
             @include margb(20px);
             /*media*/
             @include media($big){
-                @include font($raleway,500,13px,20px,$litegrey);
+                @include fontsize(13px,20px);
             }
         }
         .right__blocks{
@@ -284,6 +287,4 @@ img{
         }
     }    
 }
-/**/
-
 
