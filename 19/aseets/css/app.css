@@ -69,4 +69,19 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
-}/*# sourceMappingURL=null.css.map */
+}
+
+.sidebar {
+  max-width: 110px;
+}
+
+.conteiner {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90%;
+  background-color: #161D31;
+}
+
+.blurred {
+  padding: 20px 0px 130px 11px;
+}/*# sourceMappingURL=app.css.map */

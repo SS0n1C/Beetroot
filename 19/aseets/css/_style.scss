@@ -1,0 +1,13 @@
+.sidebar{
+    max-width: 110px;
+}
+.main{
+}
+.conteiner{
+    @include conteiner(1170px);
+    background-color: $dark;
+}
+.blurred{
+    padding: 20px 0px 130px 11px;
+   
+}
