@@ -75,6 +75,10 @@ img {
   width: 100%;
 }
 
+h2, h1 {
+  font-weight: 600;
+}
+
 .conteiner {
   max-width: 1170px;
   margin: 0 auto;
@@ -166,12 +170,13 @@ img {
 
 .half-block {
   width: 50%;
+  margin-bottom: 90px;
   /*media*/
 }
 @media (max-width: 991px) {
   .half-block {
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
 }
 .half-block__title {
@@ -196,7 +201,7 @@ img {
   font-weight: 400;
   font-size: 19px;
   line-height: 31px;
-  color: #000000;
+  color: #565656;
   /*media*/
 }
 @media (max-width: 479px) {
@@ -229,6 +234,7 @@ img {
   font-size: 28px;
   line-height: 46px;
   color: #000000;
+  font-weight: 600px;
   letter-spacing: 0.1em;
   margin-bottom: 50px;
   /*media*/
@@ -248,7 +254,7 @@ img {
   font-weight: 400;
   font-size: 19px;
   line-height: 31px;
-  color: #000000;
+  color: #565656;
   /*media*/
 }
 @media (max-width: 479px) {

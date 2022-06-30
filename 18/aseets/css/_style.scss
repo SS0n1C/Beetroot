@@ -1,6 +1,9 @@
 img{
     width: 100%;
 }
+h2,h1{
+    font-weight: 600;
+}
 .conteiner{
     @include conteiner(1170px);
     /*media*/
@@ -59,10 +62,11 @@ img{
 }
 .half-block{
     width: 50%;
+    margin-bottom: 90px;
     /*media*/
     @include media($table){
         width: 100%;
-        @include margb(90px);
+        @include margb(70px);
     }
     
     &__title{
@@ -76,7 +80,7 @@ img{
         }
     }
     &__content{
-        @include font($lato, 400,19px,31px,$black);
+        @include font($lato, 400,19px,31px,$grey);
         /*media*/
         @include media($mobile){
             font-size: 16px;
@@ -98,6 +102,7 @@ img{
     }
     &__title{
         @include font($redhat,600,28px,46px,$black);
+        font-weight: 600px;
         letter-spacing: 0.1em;
         @include margb(50px);
         /*media*/
@@ -110,7 +115,7 @@ img{
         @include margb(20px);
     }
     &__content{
-        @include font($lato, 400,19px,31px,$black);
+        @include font($lato, 400,19px,31px,$grey);
         /*media*/
         @include media($mobile){
             font-size: 16px;

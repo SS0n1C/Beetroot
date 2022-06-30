@@ -1,13 +1,85 @@
 .sidebar{
     max-width: 110px;
 }
-.main{
-}
 .conteiner{
-    @include conteiner(1170px);
-    background-color: $dark;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .blurred{
     padding: 20px 0px 130px 11px;
-   
+}
+.header-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $darkl;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    &__left{
+        display: flex;
+        align-items: center;
+        padding: 27px 0px 27px 20px;
+    }
+
+    &__left--item svg{
+        fill:#BDBDBD;
+    }
+    &__left--item{
+        margin-right: 20px;
+    }
+    .header-field__left--item:hover svg{
+        fill:$white;
+    }  
+
+    &__left--item:last-of-type{
+        margin-right: 0px;
+    }
+    .header-field__right{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        .header-field__right--lang{
+            display: flex;
+            align-items: center;
+            @include font($moserat,400,18px,22px,$grey);
+            margin-right: 56px;
+
+            .lang__flag{
+                margin-right: 20px;
+            }
+        }
+        .header-field__right--seting{
+            display: flex;
+            margin-right: 50px;
+
+            .seting__item{
+                margin-right: 20px;
+            }
+            .seting__item svg{
+                fill:$grey;
+            }
+            .seting__item:hover svg{
+                fill:$white;
+            }
+            .seting__item:last-of-type{
+                margin-right: 0px;
+            }
+        }
+        .avatar{
+            position: relative;
+        
+            &__online{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                 width: 9px;
+                 height: 9px;
+                background-color: green;
+                 border: 1px $white solid;
+                border-radius: 50px;
+            }
+        }
+    } 
 }
