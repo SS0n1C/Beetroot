@@ -71,7 +71,7 @@ img{
             width: 85%;
         }
         @include media($mobile){
-            width: 90%;
+            width: 95%;
         }
 
         &--txt{
@@ -81,6 +81,11 @@ img{
             @include font($josefin,400,16px,20px,$black);
             margin: 20px 36px;
             width: 85%;
+
+            @include media($mobile){
+                margin: 20px 15px;
+                font-size: 14px;
+            }
 
         }
 
