@@ -351,6 +351,9 @@ img{
                 &:hover .block__img{
                     border: 1px rgb(198, 54, 198) solid;
                 }
+                &:focus .block__img{
+                    border: 1px rgb(198, 54, 198) solid;
+                }
                 .block__img{
                     width: 96px;
                     height: 96px;
@@ -533,6 +536,9 @@ img{
             }
 
             &:hover svg{
+                fill:$blue;
+            }
+            &:focus svg{
                 fill:$blue;
             }
         }

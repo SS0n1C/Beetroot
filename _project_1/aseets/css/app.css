@@ -503,6 +503,9 @@ img {
 .first-nav__area--block:hover .block__img {
   border: 1px rgb(198, 54, 198) solid;
 }
+.first-nav__area--block:focus .block__img {
+  border: 1px rgb(198, 54, 198) solid;
+}
 .first-nav__area--block .block__img {
   width: 96px;
   height: 96px;
@@ -724,5 +727,8 @@ img {
   fill: #FFFFFF;
 }
 .footer-block__social--item:hover svg {
+  fill: #5373FD;
+}
+.footer-block__social--item:focus svg {
   fill: #5373FD;
 }/*# sourceMappingURL=app.css.map */
