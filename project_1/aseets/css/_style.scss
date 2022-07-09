@@ -107,6 +107,11 @@ img{
         }
         ::placeholder{
             @include font($josefin,400,14px,20px,$grey);
+            letter-spacing: 0.2em;
+            @include media($mobile){
+                letter-spacing: normal;
+                font-size: 12px;
+            }
         }
     }
     &__anchor{

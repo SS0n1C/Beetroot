@@ -215,6 +215,7 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #999999;
+  letter-spacing: 0.2em;
 }
 .header-field__search :-ms-input-placeholder {
   font-family: "Josefin Sans", sans-serif;
@@ -222,6 +223,7 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #999999;
+  letter-spacing: 0.2em;
 }
 .header-field__search ::placeholder {
   font-family: "Josefin Sans", sans-serif;
@@ -229,6 +231,21 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #999999;
+  letter-spacing: 0.2em;
+}
+@media (max-width: 665px) {
+  .header-field__search ::-moz-placeholder {
+    letter-spacing: normal;
+    font-size: 12px;
+  }
+  .header-field__search :-ms-input-placeholder {
+    letter-spacing: normal;
+    font-size: 12px;
+  }
+  .header-field__search ::placeholder {
+    letter-spacing: normal;
+    font-size: 12px;
+  }
 }
 .header-field__anchor {
   font-family: "Josefin Sans", sans-serif;
