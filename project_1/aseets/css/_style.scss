@@ -1,4 +1,5 @@
 *{transition: all .3s ease-in;}
+*{scroll-behavior: smooth;}
 a{
     color:$white;
 }
@@ -29,10 +30,12 @@ img{
     /*media*/
     @include media($desk){
         @include conteiner(960px);
+        width: 93.75%;
+        
     }
     @include media($table){
         @include conteiner(720px);
-        
+        width: 93.75%;
     }
     @include media($mobile){
         width: 100%;
@@ -119,6 +122,8 @@ img{
         letter-spacing: 0.2em;
         @include flex;
         flex-direction: column;
+        
+        
 
         &--arrow::before{
             display: block;
@@ -130,6 +135,7 @@ img{
             transform: rotate(45deg);
             display: flex;
             justify-content: center;
+            
         }
     }
 }
@@ -180,13 +186,14 @@ img{
 
         &__list{
             @include flex;
-
             @include media($table){
                 @include margt(32px);
             }
 
             @include media($mobile){
-                display: none;
+                position: absolute;
+                top:0;
+                z-index: -1;
             }
 
             &--item{
@@ -206,7 +213,6 @@ img{
     z-index: -1;
     opacity: 0;
     &:checked + .nav-area{
-        
         & .nav-area__burger{
             border: none;
             &::before{
@@ -218,13 +224,16 @@ img{
         }
 
         & .nav-area__list{
-            display: flex;
+            position:static;
+            z-index: 5;
             flex-direction: column;
             margin: 60px 0px 4px;
+            
 
             &--item{
                 margin-right: 0px;
                 margin-top: 24px;
+                
             }
         }
     }
@@ -244,13 +253,14 @@ img{
         row-gap: 16px;
         padding-top: 124px;
         padding-bottom: 124px;
+      
 
         @include media($desk){
             column-gap: 24px;
         }
         @include media($table){
             padding: 60px 0px;
-            grid-template: repeat(2, 1fr) / 48% 48%;
+            grid-template: repeat(2, auto) / 48% 48%;
         }
         @include media($mobile){
             grid-template: auto 1fr / 48% 48%;
@@ -276,6 +286,8 @@ img{
                     grid-column: 1 / 3;
                     grid-row: 2 / 3;
                     text-align: center;
+                    align-self: start;
+                    margin-top: 8px;
                     }
             }
             &:nth-child(3){
@@ -308,21 +320,24 @@ img{
             &--txt{
                 @include font($josefin,300,16px,28px,$white);
                 letter-spacing: 0.1em;
-                @include media($table){
-                    @include margb(24px);
-                }
+                
             }
             .button{
+                position: relative;
                 @include margt(32px);
                 padding: 20px 0px;
                 text-align: center;
                 width: 213px;
+                height: 60px;
                 background-color: $blue;
+                background-image: url("../img/figure.png");
+                background-position: left;
+                background-repeat: no-repeat;
                 @include font($aleo,400,16px,20px,$white);  
                 text-transform: uppercase; 
                 letter-spacing: 0,07em;
                 word-spacing: 3px;
-
+            
                 @include media($table){
                     margin: 0 auto;
                 }
@@ -429,6 +444,9 @@ img{
         text-transform: uppercase; 
         letter-spacing: 0,07em;
         word-spacing: 3px;
+        background-image: url("../img/figure.png");
+        background-position: left;
+        background-repeat: no-repeat;
     }
 
     
@@ -471,14 +489,14 @@ img{
             
         }
         .content__img{
-            width: 33.3%;
+            width: 29%;
 
             @include media($table){
                 width: 100%;
             }
         }
         .content__txt{
-            width: 66.6%;
+            width: 71%;
             padding:48px 60px;
             background-color: $brown;
 
