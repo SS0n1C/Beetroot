@@ -138,6 +138,7 @@ img{
         align-items: center;
     }
         &__burger{
+            display: inline-block;
             width: 40px;
             height: 24px;
             position: absolute;
@@ -375,11 +376,22 @@ img{
     background-image: url("../img/max/section_2_back.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    @include media($table){
+        padding-top: 120px;
+    }
 }
 .second-block__area{
     background: rgba(35, 35, 35, 0.9);
     width: 49%;
     padding: 44px 32px;
+    
+    @include media($desk){
+        width: 60%;
+    }
+    @include media($table){
+        width: 100%;
+    }
+
     &--subtitle{
         @include font($josefin,300,20px,28px,$white);
         letter-spacing: 0.1em;
@@ -395,6 +407,134 @@ img{
         letter-spacing: 0.1em;
     }
     .button{
-        @extend .button;
+        @include margt(24px);
+        padding: 20px 0px;
+        text-align: center;
+        width: 213px;
+        background-color: $blue;
+        @include font($aleo,400,16px,20px,$white);  
+        text-transform: uppercase; 
+        letter-spacing: 0,07em;
+        word-spacing: 3px;
+    }
+
+    
+    
+}
+.right{
+    background-image: url("../img/max/section_2_back_2.png");
+}
+.righ-block{
+    position: relative;
+    transform: translateX(-100%);
+    left: 100%;
+}
+/*third block*/
+.third-block{
+    background-image: url("../img/max/section_3_back.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.third-block__area{
+    padding: 120px 0px 180px;
+
+    @include media($table){
+        padding: 60px 0px 120px;
+    }
+
+        &--title{
+            @include font($aleo,400,46px,40px,$white);
+            text-align: center;
+            text-transform: capitalize;
+            @include margb(60px);
+        }
+
+        &--content{
+            display: flex;
+
+            @include media($table){
+                flex-direction: column;
+            }
+            
+        }
+        .content__img{
+            width: 33.3%;
+
+            @include media($table){
+                width: 100%;
+            }
+        }
+        .content__txt{
+            width: 66.6%;
+            padding:48px 60px;
+            background-color: $brown;
+
+            @include media($table){
+                width: 100%;
+            }
+
+            &--title{
+                @include font($josefin,400,20px,28px,$white);
+                text-transform: uppercase;
+                @include margb(11px);
+            }
+            &--txt{
+                padding-top: 6px;
+                position: relative;
+                @include font($josefin,300,16px,28px,$white);
+                letter-spacing: 0.1em;
+                
+
+                .thing{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                & span{
+                    padding-left: 30px;
+                }
+            }
+        }
+}
+/*footer*/
+.footer-field{
+    background-color: $black;
+    padding: 80px 0px;
+}
+.footer-block{
+    text-align: center;
+    &__title{
+        @include font($josefin,700,24px,28px,$white);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle{
+        @include font($josefin,400,14px,20px,$white);
+        letter-spacing: 0.2em;
+        @include margb(20px);
+    }
+
+    &__social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--item{
+            margin-right: 32px;
+            &:last-of-type{
+                margin-right: 0px;
+            }
+
+            & svg{
+                fill: $white;
+            }
+
+            &:hover svg{
+                fill:$blue;
+            }
+        }
     }
 }
