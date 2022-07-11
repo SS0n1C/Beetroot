@@ -60,6 +60,9 @@ img{
         &--subtitle{
             @include font($josefin,400,22px,28px,$white);
             letter-spacing:0.31em;
+
+            @include media(380px);
+            text-align: center;
         }
     }
 

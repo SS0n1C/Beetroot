@@ -161,6 +161,7 @@ img {
   line-height: 28px;
   color: #FFFFFF;
   letter-spacing: 0.31em;
+  text-align: center;
 }
 .header-field__search {
   width: 647px;
