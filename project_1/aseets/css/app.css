@@ -176,7 +176,7 @@ img {
 }
 @media (max-width: 665px) {
   .header-field__search {
-    width: 95%;
+    width: 100%;
   }
 }
 .header-field__search--txt {
@@ -209,11 +209,16 @@ img {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 16px;
   color: #FFFFFF;
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header-field__search .header-button span {
+  display: inline-flex;
+  align-items: center;
 }
 .header-field__search ::-moz-placeholder {
   font-family: "Josefin Sans", sans-serif;
@@ -342,9 +347,11 @@ img {
 }
 @media (max-width: 665px) {
   .nav-area__list {
+    transition: opacity 0s ease-in;
     position: absolute;
     top: 0;
     z-index: -1;
+    opacity: 0;
   }
 }
 .nav-area__list--item {
@@ -376,14 +383,17 @@ img {
   transform: rotate(-45deg);
 }
 #burger-menu:checked + .nav-area .nav-area__list {
+  transition: all 0.5s ease-in;
   position: static;
   z-index: 5;
   flex-direction: column;
+  opacity: 100;
   margin: 60px 0px 4px;
 }
 #burger-menu:checked + .nav-area .nav-area__list--item {
   margin-right: 0px;
   margin-top: 24px;
+  opacity: 100;
 }
 
 /*section who*/
@@ -502,7 +512,7 @@ img {
 }
 @media (max-width: 900px) {
   .first-section .first-area__item .button {
-    margin: 0 auto;
+    margin: 24px auto 0px;
   }
 }
 

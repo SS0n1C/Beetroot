@@ -1,0 +1,71 @@
+.wrapper{
+    background-color: $purple;
+}
+.conteiner{
+    @include conteiner(1200px);
+}
+@font-face {
+    font-family: Bebas Neue Thin;
+    src: url("../font/BebasNeue\ Thin.otf");
+}
+@font-face {
+    font-family: Bebas Neue book;
+    src: url("../font/BebasNeue\ Book.otf");
+}
+.content{
+    margin: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: $grey;
+    padding-top: 40px;
+    width: 370px;
+
+        &__price{
+            text-align: center;
+            @include margb(30px);
+            
+            &--number{
+                margin-bottom: 20px;
+                & span:nth-child(1){
+                 @include font($bebas,300,24px,28px,#181818);
+                    vertical-align: top;
+                }
+                &   span:nth-child(2){
+                @include font($bebas,300,60px,50px,$black);
+                letter-spacing: 0.08em;
+                }
+                & span:nth-child(3){
+                    @include font(Bebas Neue,300,16px,16px,$black);
+                    letter-spacing: 0.08em;
+                }
+            }
+
+        &--txt{
+            text-align: center;
+            @include font(Bebas Neue book,400,24px,28px,$black);
+            letter-spacing:0.04em;
+        }
+        }
+
+        &__area{
+            background-image: url("../img/bg-image.png");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 99% auto;
+
+            &--logo{
+                margin-top: 40px;
+                @include flex;
+                
+            }
+
+            &--list{
+                margin: 40px auto 60px;
+            }
+        }
+
+}

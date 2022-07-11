@@ -74,7 +74,7 @@ img{
             width: 85%;
         }
         @include media($mobile){
-            width: 95%;
+            width: 100%;
         }
 
         &--txt{
@@ -102,10 +102,17 @@ img{
             height: 100%;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            @include font($aleo,400,14px,20px,$white);
+            @include font($aleo,400,14px,16px,$white);
             padding: 16px 24px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            
+            
+            & span{
+                display: inline-flex;
+                align-items: center;
+            }
 
         }
         ::placeholder{
@@ -192,9 +199,11 @@ img{
             }
 
             @include media($mobile){
+                transition: opacity 0.0s ease-in;
                 position: absolute;
                 top:0;
                 z-index: -1;
+                opacity: 0;
             }
 
             &--item{
@@ -202,6 +211,7 @@ img{
                 @include font($aleo,400,14px,20px,$white);
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
+                
 
                 &:last-of-type{
                     margin-right: 0px;
@@ -225,16 +235,18 @@ img{
         }
 
         & .nav-area__list{
+            transition: all 0.5s ease-in;
             position:static;
             z-index: 5;
             flex-direction: column;
+            opacity: 100;
             margin: 60px 0px 4px;
             
 
             &--item{
                 margin-right: 0px;
                 margin-top: 24px;
-                
+                opacity: 100;
             }
         }
     }
@@ -340,7 +352,7 @@ img{
                 word-spacing: 3px;
             
                 @include media($table){
-                    margin: 0 auto;
+                    margin: 24px auto 0px;
                 }
             }
         }
