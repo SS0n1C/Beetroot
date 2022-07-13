@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper {
   background-color: #9789F9;
+  padding: 120px 0px;
 }
 
 .conteiner {
@@ -88,22 +89,76 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Bebas Neue book;
   src: url("../font/BebasNeue Book.otf");
 }
+@font-face {
+  font-family: bebas neue;
+  src: url("../font/BebasNeue Bold.otf");
+}
 .content {
-  margin: 120px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   background-color: #F5F3F9;
-  padding-top: 40px;
   width: 370px;
+  position: relative;
+  height: 611px;
+}
+.card:hover {
+  width: 400px;
+  height: 673px;
+}
+.card:hover .card__price {
+  margin: 50px 0px 40px;
+}
+.card:hover .card__img {
+  display: inline-block;
+}
+.card:hover .card__vector {
+  display: inline-flex;
+}
+.card:hover .button {
+  background-color: #FD8D7B;
+  top: -28px;
+}
+.card:hover .card__footer--txt {
+  margin-bottom: 30px;
+}
+.card:hover .card__footer {
+  height: 87px;
+}
+.card__img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.card__vector {
+  position: absolute;
+  top: 25px;
+  right: -76px;
+  background-image: url("../img/tooltip.png");
+  background-repeat: no-repeat;
+  width: 101px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Bebas Neue book;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
+  display: none;
+  z-index: 100;
 }
 .card__price {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 40px 0px 30px;
 }
 .card__price--number {
   margin-bottom: 20px;
@@ -155,4 +210,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card__area--list {
   margin: 40px auto 60px;
+  margin-left: 120px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 0.04em;
+}
+.card__area--list .list-item {
+  margin-bottom: 30px;
+}
+.card__area--list .list-item:last-of-type {
+  margin-bottom: 0px;
+}
+.card__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 57px;
+  position: relative;
+}
+.card__footer--txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+.card__footer .button {
+  position: absolute;
+  bottom: -24px;
+  width: 200px;
+  height: 54px;
+  background-color: #6FCFFB;
+  border-radius: 30px;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
+}
+.card__footer .button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
 }/*# sourceMappingURL=app.css.map */

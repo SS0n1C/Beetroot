@@ -1,5 +1,6 @@
 .wrapper{
     background-color: $purple;
+    padding: 120px 0px;
 }
 .conteiner{
     @include conteiner(1200px);
@@ -12,22 +13,78 @@
     font-family: Bebas Neue book;
     src: url("../font/BebasNeue\ Book.otf");
 }
+@font-face {
+    font-family: bebas neue;
+    src: url("../font/BebasNeue\ Bold.otf");
+}
 .content{
-    margin: 120px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .card{
     display: flex;
     flex-direction: column;
     background-color: $grey;
-    padding-top: 40px;
     width: 370px;
+    position: relative;
+    height: 611px;
+
+    &:hover{
+        width: 400px;
+        height: 673px;
+    }
+
+    &:hover .card__price{
+        margin: 50px 0px 40px;
+    }
+
+    &:hover .card__img{
+        display: inline-block;
+    }
+    &:hover .card__vector{
+        display: inline-flex;
+    }
+
+    &:hover .button{
+        background-color: #FD8D7B;
+        top:-28px;
+    }
+
+    &:hover .card__footer--txt{
+        margin-bottom: 30px;
+    }
+
+    &:hover .card__footer{
+        height: 87px;
+    }
+
+        &__img{
+            position: absolute;
+            top:10px;
+            right: 10px;
+            display: none;
+        }
+
+        &__vector{
+            position: absolute;
+            top:25px;
+            right: -76px;
+            background-image: url("../img/tooltip.png");
+            background-repeat: no-repeat;
+            width: 101px;
+            height: 30px;
+            @include flex;
+            @include font(Bebas Neue book,400,16px,16px,$white);
+            letter-spacing:  0.04em;
+            display: none;
+            z-index: 100;
+        }
 
         &__price{
             text-align: center;
-            @include margb(30px);
-            
+            margin: 40px 0px 30px;
+ 
             &--number{
                 margin-bottom: 20px;
                 & span:nth-child(1){
@@ -65,7 +122,49 @@
 
             &--list{
                 margin: 40px auto 60px;
+                margin-left: 120px;
+                @include font($roboto,300,16px,20px,$black);
+                letter-spacing: 0.04em;
+
+                .list-item{
+                    margin-bottom: 30px;
+
+                    &:last-of-type{
+                        @include margb(0px);
+                    }
+                }
             }
         }
 
+        &__footer{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 57px;
+            position: relative;
+
+            &--txt{
+                @include font($roboto,300,11px,18px,#A9A9A9);
+            }
+
+            .button{
+                
+                position: absolute;
+                bottom:-24px;
+                width: 200px;
+                height: 54px;
+                background-color: #6FCFFB;
+                border-radius: 30px;
+                @include font(Bebas Neue,400,18px,18px,$white);
+                letter-spacing: 0.04em;
+
+                a{
+                    @include flex;
+                    height: 100%;
+                    width: 100%;
+                    @include font(Bebas Neue,400,18px,18px,$white);
+                    letter-spacing: 0.04em;
+                }
+            }
+        }
 }
