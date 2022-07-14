@@ -1,6 +1,7 @@
 .wrapper{
     background-color: $purple;
     padding: 120px 0px;
+    min-height: 100%;
 }
 .conteiner{
     @include conteiner(1200px);
@@ -96,7 +97,7 @@
                 letter-spacing: 0.08em;
                 }
                 & span:nth-child(3){
-                    @include font(Bebas Neue,300,16px,16px,$black);
+                    @include font(Bebas Neue Thin,300,16px,16px,$black);
                     letter-spacing: 0.08em;
                 }
             }

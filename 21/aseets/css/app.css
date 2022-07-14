@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+* {
+  transition: all 0.3s ease-in;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 :focus, :active {
   outline: none;
 }
@@ -73,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   background-color: #9789F9;
   padding: 120px 0px;
+  min-height: 100%;
 }
 
 .conteiner {
@@ -180,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.08em;
 }
 .card__price--number span:nth-child(3) {
-  font-family: Bebas Neue;
+  font-family: Bebas Neue Thin;
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
