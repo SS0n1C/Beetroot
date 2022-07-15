@@ -1,0 +1,356 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: gotham;
+    src: url("../font/Gotham-Font/Gotham-Black.otf");
+}
+.conteiner{
+    @include conteiner(1200px);
+}
+.header-area{
+    @include flex;
+    margin: 17px 0px;
+    justify-content: space-between;
+
+        &__title{
+            display: flex;
+
+            &--logo{
+                margin-right: 13px;
+            }
+
+            &--name{
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
+        &__nav{
+            @include flex; 
+
+            &--item{
+                display: inline-flex;
+                @include font($Montserrat,400,16px,26px,$brown);
+                margin-left: 20px;
+
+                &:hover{
+                    color:$orange;
+                }
+
+                &:first-of-type{
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        &__button{
+            display: flex;
+
+            .zero{
+                margin: 0px;
+            }
+
+
+            &--item{
+                width: 110px;
+                height: 46px;
+                @include flex;
+                @include font($Montserrat,600,16px,19px,$brown);
+                border-radius: 4px;
+                border: 1px solid #BCD0E5;
+                margin-left: 32px;     
+
+                &:hover{
+                    border: none;
+                    color:white;
+                    background-color: $orange;
+                }
+            }
+        }
+}
+.section-field{
+    display: flex;
+    margin: 70px 0px 100px;
+
+    &__left{
+        margin-right: 57px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        &--h{
+            @include font($Montserrat,700,44px,54px,$brown);
+            margin-bottom: 30px;
+        }
+
+        &--txt{
+            @include font($Montserrat,400,18px,28px,$lightbrown);
+            @include margb(20px);
+        }
+
+        &--button{
+            width: 180px;
+            height: 50px;
+            border: 1px $brown solid;
+            @include flex;
+            @include font($poppins,700,16px,24px,$brown);
+            border-radius: 4px;
+
+            &:hover{
+                border: none;
+                color:$white;
+                background-color: $orange;
+            }
+        }
+    }
+
+    &__right{
+        width: 50%;
+    }
+}
+.footer{
+    padding: 70px;
+    border-top: 1px rgba(188, 208, 229, 0.496913) solid;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__logo{
+        display: inline-flex;
+        max-height: 32px;
+
+        &--img{
+            margin-right: 13px;
+        }
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        width: 135px;
+
+        &--item{
+            @include font($Montserrat,500,16px,26px,$lightbrown);
+            @include margb(15px);
+        }
+
+        .main-link{
+            @include font($gotham,700,20px,30px,$brown);
+            @include margb(30px);
+        }
+    }
+
+    &__form{
+        max-width: 340px;
+
+        &--txt{
+            @include font($gotham,700,20px,28px,$brown);
+            @include margb(25px);
+        }
+
+        &--field{
+            border: 1px #BCD0E5 solid;
+            border-radius: 4px;
+            padding: 15px 10px;
+            @include margb(25px);
+
+        ::placeholder{
+            @include font($Montserrat,400,16px,20px,#BCD0E5);
+            }
+        }
+
+        &--button{
+            width: 180px;
+            height: 50px;
+            border: 1px $brown solid;
+            @include flex;
+            @include font($poppins,700,16px,24px,$brown);
+            border-radius: 4px;
+            
+            &:hover{
+                border: none;
+                color:$white;
+                background-color: $orange;
+            }
+        }
+    }
+}
+.section-2{
+    background-image: url("../img/section2/bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 78px;
+
+    &__title{
+        text-align: center;
+        @include font($Montserrat,700,36px,44px,$brown);
+        @include margb(50px);
+
+        & span{
+            display: block;
+        }
+    }
+
+    .link-area{
+        display: flex;
+        justify-content: space-between;
+
+        &__block{
+            display: flex;
+            flex-direction: column;
+            max-width: 270px;
+
+            &--img{
+                width: 50px;
+                height: 50px;
+                border-radius: 15px;
+                background-color: #7752BE;
+                @include margb(30px);
+                @include flex;
+
+                & svg{
+                    width: 20px;
+                    height: 20px;
+                }  
+            }
+            .second{
+                background-color: #FAB005;
+            }
+            .thirty{
+                background-color: #F03E3D;
+            }
+            .four{
+                background-color: #4DADF7;
+            }
+            &--title{
+                @include font($Montserrat,600,22px,27px,$brown);
+                @include margb(16px);
+            }
+
+            &--txt{
+                @include font($Montserrat,500,16px,26px,$lightbrown);
+            }
+        }  
+    }
+
+    &__button{
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        margin-top: 70px;
+        width: 180px;
+        height: 50px;
+        border: 1px $brown solid;
+        @include flex;
+        @include font($poppins,700,16px,24px,$brown);
+        border-radius: 4px;
+
+        &:hover{
+            border: none;
+            color:$white;
+            background-color: $orange;
+        }
+        }
+}
+.grid-area{
+    margin: 104px 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,auto);
+    row-gap: 100px;
+
+
+        .grid-content{
+            
+            &:nth-child(1){
+                align-self: center;
+                margin-right: 113px;
+            }
+
+            &:nth-child(2){
+                max-width: 562px;
+            }
+
+            &:nth-child(3){
+                order: 2;
+                margin-left: 125px;
+                align-self: center;
+            }
+            &:nth-child(4){
+                order: 1;
+                width: 570px;
+            }
+            &:nth-child(5){
+                order: 4;
+                align-self: center;
+                margin-right: 174px;
+            }
+            &:nth-child(6){
+                order: 5;
+                max-width:540px;
+                justify-self: end;
+            }
+             
+            &__title{
+                @include margb(40px);
+
+                &--subtitle{
+                    @include font($Montserrat,500,16px,26px,$lightbrown);
+                    
+                }
+                &--h{
+                    @include font($Montserrat,700,36px,44px,$brown);
+                    @include margb(20px);
+                }
+                &--txt{
+                    @include font($Montserrat,500,16px,26px,$lightbrown);
+                }
+            }
+
+            &__list{
+                @include margb(30px);
+
+                &:last-of-type{
+                    @include margb(0px);
+                }
+
+                &--title{
+                    @include font($Montserrat,700,16px,26px,$brown);
+                    @include margb(10px);
+                }
+                &--txt{
+                    @include font($Montserrat,500,16px,26px,$lightbrown);
+                }
+            }
+
+            &__flex-box{
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                    &--box{
+                        width: 35px;
+                        height: 35px;
+                        background-color: $orange;
+                        border-radius: 10px;
+                        @include flex;
+                        margin-right: 30px;
+
+                        & svg{
+                            width: 17px;
+                            height: 12px;
+                        }
+                    }
+
+                    &--txt{
+                        @include font($Montserrat,500,16px,26px,$lightbrown);
+                        width: 440px;
+                    }
+            }
+        }
+}

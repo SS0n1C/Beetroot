@@ -26,6 +26,10 @@ a:focus, a:active {
   outline: none;
 }
 
+a {
+  color: inherit;
+}
+
 nav, footer, header, aside {
   display: block;
 }

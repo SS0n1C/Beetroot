@@ -15,9 +15,6 @@
 
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
-a{
-    color:inherit;
-}
 
 nav,footer,header,aside{display: block;}
 
@@ -42,3 +39,7 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;}
+
+a{
+    color:inherit;
+}
