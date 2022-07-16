@@ -28,6 +28,7 @@ h2,h1{
     }
     &__txt{
         @include font($lato,400,16px,14px,$black);
+        letter-spacing: 0.5em;
     }
 }
 .main-title{
