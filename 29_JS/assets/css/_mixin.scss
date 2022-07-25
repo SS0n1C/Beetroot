@@ -1,0 +1,33 @@
+@mixin conteiner($w){
+    max-width: $w;
+    margin: 0 auto;
+    width: 90%;
+}
+@mixin font($ff,$fw,$fs,$lh,$fc) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color:$fc;
+}
+@mixin fontsize($s,$l){
+    font-size: $s;
+    line-height: $l;  
+}
+@mixin media($m){
+    @media (max-width: $m){
+        @content;
+    }
+}
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin margb($marg) {
+    margin-bottom: $marg;  
+}
+@mixin margt($margt){
+    margin-top: $margt;
+    
+}

@@ -13,7 +13,7 @@ alert(`You can write ${Math.floor(flesh / file)} file`);
 
 let $ = prompt("Haw many $ you have?", "");
 let price = prompt("And what a price your chocolate?","");
-alert(`Hmm.. you can buy only ${Math.floor($ / price)} i am very sory`);
+alert(`Hmm.. you can buy only ${Math.floor($ / price)} I am very sory`);
 alert(`But dont sad,beckause you still have ${($ % price).toFixed(2)}`);
 
 let number = prompt("Add you number", "");
@@ -27,7 +27,7 @@ while(number > 0){
 }
 alert(+zero);
 
-let deposit = prompt("Haw many kesh do you have?","");
+let deposit = prompt("Haw many cash do you have?","");
 let percent = 5 / 6;
 alert(`After 2 monts you will have ${(+deposit/100 * percent).toFixed(2)}`);
 
