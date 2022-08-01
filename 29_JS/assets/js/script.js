@@ -204,58 +204,58 @@
 //   }
 // }
 // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів.
-let number = prompt("Enter a number:");
-result = number.split(",");
-console.log('result', result);
-let positive = " ";
-let negative = " ";
-let zeroNum = " ";
-let pari = " ";
-let notPari = " ";
-for(index = 0; index < result.length; ++index){
-    if(result[index] > 0 ){
-        positive += result[index] + ",";
-    }
-    if(result[index] < 0 ){
-        negative += result[index] + ",";
-    } 
-    if(result[index] == 0 ){
-        zeroNum += result[index] + ",";
-    }
-}
-for(index = 0; index < result.length; ++index){
-    if (result[index] % 2 == 0) {
-        pari += result[index] + ",";
-}
-    if (result[index] % 2 !== 0) {
-        notPari += result[index] + ",";
-}
-}
-console.log(`${pari} - Its your even numbers`);
-console.log(`${notPari} - Its your not even numbers`);
-console.log(`${positive} - Its your positive number`);
-console.log(`${negative} - Its your negative number`);
-console.log(`${zeroNum} - Its your zero`);
+// let number = prompt("Enter a number:");
+// result = number.split(",");
+// console.log('result', result);
+// let positive = " ";
+// let negative = " ";
+// let zeroNum = " ";
+// let pari = " ";
+// let notPari = " ";
+// for(index = 0; index < result.length; ++index){
+//     if(result[index] > 0 ){
+//         positive += result[index] + ",";
+//     }
+//     if(result[index] < 0 ){
+//         negative += result[index] + ",";
+//     } 
+//     if(result[index] == 0 ){
+//         zeroNum += result[index] + ",";
+//     }
+// }
+// for(index = 0; index < result.length; ++index){
+//     if (result[index] % 2 == 0) {
+//         pari += result[index] + ",";
+// }
+//     if (result[index] % 2 !== 0) {
+//         notPari += result[index] + ",";
+// }
+// }
+// console.log(`${pari} - Its your even numbers`);
+// console.log(`${notPari} - Its your not even numbers`);
+// console.log(`${positive} - Its your positive number`);
+// console.log(`${negative} - Its your negative number`);
+// console.log(`${zeroNum} - Its your zero`);
 
 
-// Гра «Вгадай число»
-let max = 100;
-let min = 1;
-let N = 50; 
-let answer = false;
-alert("To guess number from 1 to 100");
+// // Гра «Вгадай число»
+// let max = 100;
+// let min = 1;
+// let N = 50; 
+// let answer = false;
+// alert("To guess number from 1 to 100");
 
-do{
-    answer = confirm(`your number is ${N}`)
-    smaller = confirm(`You number less ${N}`)
-    if (smaller){
-        max = N;
-        N = parseInt((min + max) / 2);
-    } else{
-        min = N;
-        N = parseInt((min + max) / 2);
-    }
-}while(!answer){
-    alert("Victory")
-}
+// do{
+//     answer = confirm(`your number is ${N}`)
+//     smaller = confirm(`You number less ${N}`)
+//     if (smaller){
+//         max = N;
+//         N = parseInt((min + max) / 2);
+//     } else{
+//         min = N;
+//         N = parseInt((min + max) / 2);
+//     }
+// }while(!answer){
+//     alert("Victory")
+// }
 

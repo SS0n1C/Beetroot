@@ -45,17 +45,25 @@
 // }
 
 let time = {
-    second: this.minute / 60,
-    minute: 1,
-    hour: this.minute * 60,
-
-    getTime(X){
-        let time2 = X / this.hour;
-        console.log(time2);
+    hour: 3600,
+    minute: {
+    getMinute(min){
+        let minute = this.hour * min;
+        return minute;
     }
-    
+    }
 }
-time.getTime(300);
+time.getMinute(600)
+console.log(time.minute);
+
+
+
+
+// alert((h<10?"0"+h:h)+" ч. "+(m<10?"0"+m:m)+" мин. "+(s<10?"0"+s:s)+" сек.") ;
+
+// second: sec - hour * 3600 - minute * 60,
+//     minute: (sec-hour*3600)/60 ^ 0, 
+//     hour: sec/3600 ^ 0,
 
 
 
