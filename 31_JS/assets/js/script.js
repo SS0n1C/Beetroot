@@ -44,28 +44,9 @@
 //     alert("Ivan is not on a list")
 // }
 
-let time = {
-    hour: 3600,
-    minute: {
-    getMinute(min){
-        let minute = this.hour * min;
-        return minute;
-    }
-    }
-}
-time.getMinute(600)
-console.log(time.minute);
-
-
-
-
-// alert((h<10?"0"+h:h)+" ч. "+(m<10?"0"+m:m)+" мин. "+(s<10?"0"+s:s)+" сек.") ;
-
-// second: sec - hour * 3600 - minute * 60,
-//     minute: (sec-hour*3600)/60 ^ 0, 
-//     hour: sec/3600 ^ 0,
-
-
-
+// Створити об'єкт, що описує час (години, хвилини, секунди)
+var d = new Date();
+d.se (d.getDate() +1);
+alert(d);
 
 
