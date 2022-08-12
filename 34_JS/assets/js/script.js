@@ -13,50 +13,33 @@
 // }
 
 
-
-// var playList = [
-//     {author: "LED ZEPPELIN", song:"STAIRWAY TO HEAVEN"},
-//     {author: "QUEEN", song:"BOHEMIAN RHAPSODY"},
-//     {author: "LYNYRD SKYNYRD", song:"FREE BIRD"},
-//     {author: "DEEP PURPLE", song:"SMOKE ON THE WATER"},
-//     {author: "JIMI HENDRIX", song:"ALL ALONG THE WATCHTOWER"},
-//     {author: "AC/DC", song:"BACK IN BLACK"},
-//     {author: "QUEEN", song:"WE WILL ROCK YOU"},
-//     {author: "METALLICA", song:"ENTER SANDMAN"} 
-// ];
-
-let divS = document.createElement("div");
-let playList = document.createElement("ol");
-let item1= document.createElement("li");
-let item2 = document.createElement("li");
-let item3 = document.createElement("li");
-let item4 = document.createElement("li");
-let item5 = document.createElement("li");
-let item6 = document.createElement("li");
-let item7 = document.createElement("li");
-let item8 = document.createElement("li");
-document.body.appendChild(divS);
-divS.prepend(playList);
-playList.prepend(item1);
-playList.prepend(item2);
-playList.prepend(item3);
-playList.prepend(item4);
-playList.prepend(item5);
-playList.prepend(item6);
-playList.prepend(item7);
-playList.prepend(item8);
-
-item8.innerHTML = {
-    author: "LED ZEPPELIN", 
-    song:"STAIRWAY TO HEAVEN"
+// Створити сторінку, що показує нумерований список пісень:
+var array = [
+    {author: "LED ZEPPELIN", song:"STAIRWAY TO HEAVEN"},
+    {author: "QUEEN", song:"BOHEMIAN RHAPSODY"},
+    {author: "LYNYRD SKYNYRD", song:"FREE BIRD"},
+    {author: "DEEP PURPLE", song:"SMOKE ON THE WATER"},
+    {author: "JIMI HENDRIX", song:"ALL ALONG THE WATCHTOWER"},
+    {author: "AC/DC", song:"BACK IN BLACK"},
+    {author: "QUEEN", song:"WE WILL ROCK YOU"},
+    {author: "METALLICA", song:"ENTER SANDMAN"} 
+];
+let list = document.createElement("ol")
+list.id ="textList"
+document.body.append(list)
+function makeFormatedString(author, song) {
+    return author + ' ' + "-" +  song  +  ' ' ;
 }
-item7.innerText = "author: QUEEN" + "song:BOHEMIAN RHAPSODY"
 
+function printText(text) {
+    var ul = document.getElementById('textList');
+    ul.insertAdjacentHTML('beforeend', '<li>' + text + '</li>');
+}
 
-console.log(item8);
-console.log(playList);
-
-
+for (var fullText of array.map(function (e) { return makeFormatedString(e.author, e.song); })) {
+    printText(fullText);
+    console.log(fullText);
+}
 
 
 
