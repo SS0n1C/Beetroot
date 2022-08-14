@@ -13,9 +13,10 @@ $(function(){
   $(document).ready(function(){
     $('.second-slider').slick({
       arrows:true,
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       speed: 500,
+      infinite: true,
     });
   }); 
   $(document).ready(function(){

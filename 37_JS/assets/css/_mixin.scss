@@ -1,6 +1,7 @@
 @mixin conteiner($w){
-    width: $w;
+    max-width: $w;
     margin: 0 auto;
+    width: 95%;
     
 }
 @mixin font($ff,$fw,$fs,$lh,$fc) {

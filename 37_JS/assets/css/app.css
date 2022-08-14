@@ -88,8 +88,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .conteiner {
-  width: 1320px;
+  max-width: 1320px;
   margin: 0 auto;
+  width: 95%;
+}
+@media (max-width: 900px) {
+  .conteiner {
+    width: 95%;
+  }
 }
 
 .header-field {
@@ -99,15 +105,32 @@ h1, h2, h3, h4, h5, h6 {
   height: 80px;
   margin: 0px 89px;
 }
+@media (max-width: 900px) {
+  .header-field {
+    margin: 0px 7px;
+    height: 60px;
+  }
+}
 .header-field__nav {
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20;
+  font-size: 20px;
   line-height: 24px;
   color: #000000;
   height: 100%;
+}
+@media (max-width: 900px) {
+  .header-field__nav {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 665px) {
+  .header-field__nav {
+    display: none;
+  }
 }
 .header-field__nav--item {
   padding: 0 15px 0 15px;
@@ -123,8 +146,39 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
+.header-field__button::after {
+  content: url("../img/vector.png");
+  display: none;
+  margin-left: 40px;
+}
+@media (max-width: 665px) {
+  .header-field__button::after {
+    display: inline-flex;
+  }
+}
+.header-field__button svg {
+  height: 36px;
+  width: 36px;
+}
+@media (max-width: 900px) {
+  .header-field__button svg {
+    height: 27px;
+    width: 27px;
+  }
+}
+@media (max-width: 665px) {
+  .header-field__button svg {
+    height: 20px;
+    width: 20px;
+  }
+}
 .header-field__button--item:first-of-type {
   margin-right: 30px;
+}
+@media (max-width: 900px) {
+  .header-field__button--item:first-of-type {
+    margin-right: 23px;
+  }
 }
 
 .slick-dotted.slick-slider {
@@ -137,6 +191,11 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: 100%;
   height: 700px;
+}
+@media (max-width: 900px) {
+  .top-slider__block {
+    height: 380px;
+  }
 }
 
 .thirty-block {
