@@ -1,0 +1,43 @@
+#map {
+    height: 100%;
+
+}
+.menu {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    background-color: white;
+    opacity: 70%;
+    top: 100px;
+    right: 0;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.block{
+    display: flex;
+    font-size: 20px;
+
+    &__txt{
+        padding: 20px;
+    }
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar {
+    width: 300px;
+}
