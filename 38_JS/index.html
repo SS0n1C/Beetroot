@@ -12,6 +12,30 @@
 
 </head>
 <body>
+   <div class="wrapper">
+    <form action="#" method="POST" id="searchForm"></form>
+    <div class="mainTitle">Welcome</div>
+    <div class="formField">
+        <input type="search" class="textField" placeholder="Add your film name" form="searchForm" id = "test">
+        <select name="filmType" id="type" form="section_1" required class="typeFilmSelector" form="searchForm">
+            <option value="">Select type</option>
+            <option value="movie">movie</option>
+            <option value="series">series</option>
+            <option value="episode">episode</option>
+        </select>
+    </div>
+    <button type="submit" class="button" name="button_section" form="searchForm">search</button>
+    
+
+
+   </div> 
+
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+.wrapper{
+    display: flex;
+    align-items: center; 
+    margin: 40px;
+    flex-direction: column;  
+
+    .mainTitle{
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:brown;
+    }
+    .formField{
+        margin-top: 50px;
+        display: flex;
+    }
+    .textField{
+        background-color: rgb(144, 217, 150);
+        border:2px black solid;
+        border-radius: 5px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 28px;
+        color: brown;
+    }
+    .typeFilmSelector{
+        height: 40px;
+        margin-left: 25px;
+        border:1px black solid;
+        border-radius: 5px;
+        font-size: 20px;
+        line-height: 25px;
+        background-color: rgb(237, 237, 120);  
+     
+    }
+    .button{
+        margin-top: 20px;
+        height: 40px;
+        width:100px;
+        border:2px black solid;
+        border-radius: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}

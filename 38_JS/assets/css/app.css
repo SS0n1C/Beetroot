@@ -80,4 +80,48 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  flex-direction: column;
+}
+.wrapper .mainTitle {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: brown;
+}
+.wrapper .formField {
+  margin-top: 50px;
+  display: flex;
+}
+.wrapper .textField {
+  background-color: rgb(144, 217, 150);
+  border: 2px black solid;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 28px;
+  color: brown;
+}
+.wrapper .typeFilmSelector {
+  height: 40px;
+  margin-left: 25px;
+  border: 1px black solid;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: rgb(237, 237, 120);
+}
+.wrapper .button {
+  margin-top: 20px;
+  height: 40px;
+  width: 100px;
+  border: 2px black solid;
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=app.css.map */
