@@ -124,4 +124,75 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   font-size: 20px;
   text-transform: uppercase;
+}
+.wrapper .filmField {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 50px;
+  justify-content: center;
+}
+.wrapper .filmField__item {
+  margin: 20px;
+  font-size: 24px;
+  max-width: 350px;
+  text-align: center;
+  max-height: 611px;
+}
+.wrapper .filmField__item--title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.wrapper .filmField__item--year {
+  display: inline-flex;
+  width: 50%;
+}
+.wrapper .filmField__item--type {
+  display: inline-flex;
+  width: 49%;
+  justify-content: flex-end;
+}
+.wrapper .filmField__item--poster {
+  height: 500px;
+  width: 350px;
+}
+.wrapper .filmField__item--poster img {
+  height: 100%;
+  width: 100%;
+}
+.wrapper .filmField__item--button {
+  width: 300px;
+  height: 45px;
+  background-color: grey;
+  font-size: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.wrapper .filmField__item--button::before {
+  content: "Detail";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.wrapper .informationField__card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-size: 20px;
+}
+.wrapper .informationField__card span {
+  margin-left: 25px;
+  font-size: 28px;
+}
+.wrapper .pagination__field {
+  margin: 50px;
+  width: 100px;
+  height: 45px;
+  line-height: 45px;
+  background-color: deeppink;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  display: none;
 }/*# sourceMappingURL=app.css.map */

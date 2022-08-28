@@ -42,4 +42,87 @@
         font-size: 20px;
         text-transform: uppercase;
     }
+    .filmField{
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       column-gap: 25px;
+       row-gap: 50px;
+       justify-content: center;
+
+        &__item{
+            margin: 20px;
+            font-size: 24px;
+            max-width: 350px;
+            text-align: center;
+            max-height: 611px;
+
+            &--title{
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+
+            &--year{
+                display: inline-flex;
+                width: 50%;
+            }
+            &--type{
+                display: inline-flex;
+                width: 49%;
+                justify-content: flex-end
+            }
+
+            &--poster{
+                height: 500px;
+                width: 350px;
+                
+
+                & img{
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+            &--button{
+               width: 300px;
+               height:45px;
+               background-color:grey;
+               font-size: 0;
+               border-radius: 5px;
+               margin-top: 10px;
+               
+               &::before{
+                content: "Detail";
+                font-size: 24px;
+                text-transform: uppercase;
+               }
+              
+            }
+            
+        }
+        
+    }
+    .informationField__card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        font-size: 20px;
+        
+
+        & span{
+            margin-left: 25px;
+            font-size: 28px;
+        }
+    }
+    .pagination__field{
+        margin: 50px;
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        background-color:deeppink;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        display: none;
+    }
 }

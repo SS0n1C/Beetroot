@@ -13,21 +13,28 @@
 </head>
 <body>
    <div class="wrapper">
-    <form action="#" method="POST" id="searchForm"></form>
     <div class="mainTitle">Welcome</div>
     <div class="formField">
-        <input type="search" class="textField" placeholder="Add your film name" form="searchForm" id = "test">
-        <select name="filmType" id="type" form="section_1" required class="typeFilmSelector" form="searchForm">
+       <input type="text" class="textField" placeholder="Add your film name" id="textField">
+        <select name="filmType" id="type" form="section_1" required class="typeFilmSelector" >
             <option value="">Select type</option>
             <option value="movie">movie</option>
             <option value="series">series</option>
-            <option value="episode">episode</option>
+            
         </select>
     </div>
-    <button type="submit" class="button" name="button_section" form="searchForm">search</button>
-    
+    <button type="submit"class="button" name="button_section" id="searchButton">search</button>
+  
+    <div class="filmField">
+    </div>
+    <div class="pagination">
 
+    </div>
+    <div class="informationField">
+        <div class="informationField__card">
 
+        </div>
+    </div>
    </div> 
 
 
