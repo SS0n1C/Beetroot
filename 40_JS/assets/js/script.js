@@ -1,8 +1,8 @@
 $(document).ready(() =>  {
 
 let key = "&APPID=3020455e36a8cb93ab53673539958392"
-let lat = "49.2827291"
-let lon = "-123.1207375"
+let lat = "-33.8678500"
+let lon = "151.2073200"
 async function weatherAPI(){
     let URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}3&lon=${lon}&dt&exclude=hourly,daily&units=metric${key}`
     const res = await fetch(`${URL}`);
@@ -32,10 +32,12 @@ weatherAPI().then((test)=>{
     document.cookie  = `name = ${JSON.stringify(test)}; max-age=7200`
     let cookieBody = get_cookie ("name")
     let weathercoockie = JSON.parse(cookieBody)
+    console.log(weathercoockie)
     let cord = weathercoockie.coord
     let wind= weathercoockie.wind
     let sky = weathercoockie.weather
     let temp = weathercoockie.main
+   
     for(let key in cord){
         $(".weatherCard__cord").append( key + " = " + cord[key] +" ")
     }
@@ -44,6 +46,8 @@ weatherAPI().then((test)=>{
     $(".main__country").append(test.sys.country)
     sky.forEach(element => {
         $(".main__weather--weather").append(element.description)
+        $("<div></div>").append(`<img src='http://openweathermap.org/img/wn/${element.icon}@2x.png'>`).appendTo(".main__weather--icon")
+        console.log(element.icon)
     })
     for(let key in wind){
         $(".main__weather--wind").append("wind "+ key + " = " + wind[key] +"<br>")
@@ -74,6 +78,7 @@ function getcookie(){
     $(".main__country").append(weathercoockie.sys.country)
     sky.forEach(element => {
         $(".main__weather--weather").append(element.description)
+        $("<div></div>").append(`<img src='http://openweathermap.org/img/wn/${element.icon}@2x.png'>`).appendTo(".main__weather--icon")
     })
     for(let key in wind){
         $(".main__weather--wind").append("wind "+ key + " = " + wind[key] +"<br>")
