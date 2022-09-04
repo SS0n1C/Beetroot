@@ -1,0 +1,17 @@
+$color:deeppink;
+@mixin fontsize($s,$l){
+    font-size: $s;
+    line-height: $l;  
+}
+body{
+    font-size: 10px;
+}
+.wrapper{
+    background-color: $color;
+    text-align: center;
+
+    &-main{
+        @include fontsize(30px, 35px)
+    }
+
+}
