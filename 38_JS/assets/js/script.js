@@ -47,7 +47,7 @@ $(document).ready(() =>  {
                 let information = $(this).text()
                 
                 async function getFilmDetail(){
-                    let URL = `http://www.omdbapi.com/?i=${information}&plot=full&apikey=46dfcae7`
+                    let URL = `https://www.omdbapi.com/?i=${information}&plot=full&apikey=46dfcae7`
                     const res = await fetch(`${URL}`);
                     const data = await res.json();
                     return data

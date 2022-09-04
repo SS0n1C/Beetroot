@@ -4,7 +4,7 @@ let key = "&APPID=3020455e36a8cb93ab53673539958392"
 let lat = "49.2827291"
 let lon = "-123.1207375"
 async function weatherAPI(){
-    let URL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}3&lon=${lon}&dt&exclude=hourly,daily&units=metric${key}`
+    let URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}3&lon=${lon}&dt&exclude=hourly,daily&units=metric${key}`
     const res = await fetch(`${URL}`);
     const data = await res.json();
     return data
