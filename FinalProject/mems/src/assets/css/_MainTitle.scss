@@ -1,0 +1,20 @@
+.header{
+    height:100%;  
+        @include font($Lucky,400,7.2rem,8rem,$black);
+         text-transform: uppercase;
+         letter-spacing: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         text-shadow: 2px 2px #b40909;
+         &__logo{
+             width: 10rem;
+             height: 10rem;
+             border-radius: 50%;
+             background-image: url("../img/header/logo.jpg");
+             background-position: bottom;
+             background-size: cover;
+             border: 2px black solid;
+         }
+       
+ }

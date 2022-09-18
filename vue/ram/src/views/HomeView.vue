@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <h1>{{persons}}</h1>
+  <buttonn variant = "success" @click="getPersons">Button</buttonn>
   </div>
 </template>
 
@@ -12,7 +12,19 @@ import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    // HelloWorld,
   },
+  data(){
+    return{
+      persons:{}
+    }
+  },
+  methods:{
+    getPersons(){
+      this.axios.get("https://rickandmortyapi.com/api/character").then(resp =>{
+        this.persons = resp
+    });
+  },
+},
 };
 </script>

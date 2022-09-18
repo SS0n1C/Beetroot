@@ -1,0 +1,77 @@
+
+svg{
+    width: 20px;
+    height: 20px;
+}
+.footer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-image: url("../img/footer/footerBack.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: yellow;
+
+
+    &__logo{
+        background-image: url("../img/header/logo.jpg");
+        background-color: red;
+        background-position: bottom;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px black solid;
+    }
+
+    &__author{
+        display: flex;
+        align-items:flex-end;
+        height: 100%;
+        @include font($RobotoSlab,500,20px,24px,black);
+        text-transform: uppercase;
+        &--txt{
+            align-items:flex-end;
+        }
+    }
+
+    &__media{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin-bottom: 15px;
+        &--item{
+            border: 1px blue solid;
+            border-radius: 5px;
+            padding: 10px;
+            @include flex;
+            width: 30px;
+            height: 30px;
+            
+           
+            &:hover{
+                background-color: white;
+                border-color: black;
+               
+            }
+            .media__svg{
+                width: 20px;
+                height: 20px;
+                display: block;
+            }
+        }
+    }
+
+    &__telephon{
+        margin-bottom: 15px;
+        @include font($RobotoSlab,700,20px,24px,black);
+    }
+
+    &__email{
+       font-size: 24px;
+       border-bottom: 1px black solid;
+       @include font($RobotoSlab,500,20px,24px,black);
+    }
+}

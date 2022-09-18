@@ -1,0 +1,183 @@
+
+.modalField{
+    
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    z-index: 101;
+    background-image: url("../img/modal/marioBack.webp");
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.modal {
+    background-color: rgb(239, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    min-height: 80%;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 10px;
+    border: 15px rgb(195, 192, 192) outset;
+
+
+    &__memomoMeter {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--polus {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 25px;
+            overflow: hidden;
+            background-color: #c5bfbf;
+        }
+
+        &--ladder {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0rem;
+
+            .lader__item {
+                width: 6rem;
+                height: 5rem;
+                border: 2px $dark1 solid;
+
+                &:first-of-type {
+                    background-color: $rubyRed;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                    position: relative;
+
+                    &::after {
+                        content: "100%";
+                        position: absolute;
+                        left: 120px;
+                        @include font($RobotoSlab, 400, 21px, 24px, $dark2)
+                    }
+                }
+
+                &:last-of-type {
+                    background-color: $lighBlue;
+                    border-bottom-right-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    position: relative;
+
+                    &::after {
+                        content: "0%";
+                        position: absolute;
+                        left: 8.5rem;
+                        bottom: 0;
+                        @include font($RobotoSlab, 400, 21px, 24px, $dark2)
+                    }
+                }
+            }
+
+            .lader__item--right {
+                &:first-of-type {
+                    &::after {
+                        left: -4.3rem;
+                    }
+                }
+
+                &:last-of-type {
+                    &::after {
+                        left: -3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__block {
+        @include flex;
+        align-items: flex-end;
+
+        &--firstWindow {
+            @include flex;
+            flex-direction: column;
+
+
+            .firstWindow__alert {
+                @include flex;
+                width: 35.7rem;
+                height: 14.3rem;
+                border: 5px $dark1 outset;
+                border-radius: 25px;
+                @include font($RobotoSlab, 500, 24px, 100%, $dark2);
+                text-transform: uppercase;
+                text-align: center;
+                padding: auto 5rem;
+                position: relative;
+                text-shadow:
+                    0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 30px #0fa,
+                    0 0 70px #0fa,
+                    0 0 90px #0fa;
+
+
+                &--txt {
+                    position: relative;
+                    z-index: 10;
+                    background-color: whitesmoke;
+                    height: 100%;
+                    width: 100%;
+                    @include flex;
+                    padding: 0px 10px;
+
+                    & i {
+                        font-weight: 700;
+                    }
+
+
+
+                }
+                &--popUp {
+                    background-image: url("../img/modal/wowDog.jpg");
+                    width: 13rem;
+                    height: 13rem;
+                    top: -180px;
+                    left: 120px;
+                    border-radius: 25px;
+                    position: absolute;
+                    z-index: 250;
+                }
+            }
+
+            .firstWindow__button {
+                transition: all .3s ease-in;
+                margin-top: 5rem;
+                width: 10em;
+                height: 10rem;
+                border: 1px $rubyRed solid;
+                border-radius: 50%;
+                @include flex;
+                box-shadow: 10px 3px $rubyRed, -1em 0 .3em olive;
+
+                &:hover {
+                    box-shadow: none;
+                    border: none;
+                }
+
+                & button {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    @include font($RobotoSlab, 400, 32px, 24px, $rubyRed);
+
+                    &:hover{
+                        background-color: $rubyRed;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
