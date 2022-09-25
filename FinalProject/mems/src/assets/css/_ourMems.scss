@@ -1,23 +1,25 @@
 .ourMems {
     padding: 5px 0px;
     width: 93%;
-    margin: 0 auto;
-
+    margin: 5px auto 5px;
+    height: 400px;
+    
     .ourMems__item--likes {
-        width: 80%;
         margin: 4px auto 0 auto;
         height: 95%;
         display: flex;
-        justify-content:space-around;
+        justify-content:center;
         align-items: flex-end;
         cursor: pointer;
-
 
     }
     .score {
         height: 20px;
         display: flex;
         justify-content: center;
+        @include font($Lucky,700,24px,24px,$black);
+        text-shadow: 1px -1px red;
+        
 
         &__logo {
             width: 20px;
@@ -34,6 +36,7 @@
     .likeInput{
         height: 20px;
         width: 20px;
+        margin-left: 20px;
 
         & svg {
             width: 100%;

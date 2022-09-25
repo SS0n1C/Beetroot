@@ -1,0 +1,107 @@
+.newsField{
+    padding: 50px 20px 10px 20px;
+
+    &__title{
+        text-align: center;
+        @include font($RobotoSlab,600,32px,35px,$lighBlue);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+.newsArea{
+    display: flex;
+    justify-content:space-between;
+
+    @include media($mobile){
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .news{
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-right: 1px black solid;
+        border-left: 1px black solid;
+        padding: 0px 5px;
+        text-align: center;
+        position: relative;
+
+
+        @include media($mobile){
+            margin-bottom: 30px;
+            border-right: none;
+            border-left: none;
+            border-top: 1px black solid;
+            border-bottom: 1px black solid;
+
+            &:nth-child(even){
+                align-items: flex-end;
+             }
+             &:nth-child(odd){
+                align-items: flex-start;
+             }
+        }
+        
+
+        &__title{
+            @include font($serif,700,18px,20px,$black);
+            margin-bottom:10px;
+        }
+
+        &__img{
+            width: 150px;
+            height: 100px;
+            
+
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__txt{
+            @include font($RobotoSlab,400,16px,18px,$black);
+            padding: 5px;
+        }
+
+        &__link{
+            @include font($Lucky,400,16px,18px,$lighBlue);
+            cursor: pointer;
+            
+
+            &:hover{
+                color: red;
+            }
+        }
+        
+    }
+}
+.newsVideo__area{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    height: 250px;
+
+    @include media($table){
+        height: 350px;
+    }
+    
+
+    .news__video{
+        width: 30%;
+        max-width: 350px;
+        height: 100%;
+       
+        @include media($table){
+            width: 100%;
+            max-width: 100%;
+            
+        }
+        
+    }
+    
+}

@@ -1,12 +1,21 @@
 .header{
     height:100%;  
-        @include font($Lucky,400,7.2rem,8rem,$black);
+        @include font($Lucky,400,7rem,7rem,$black);
          text-transform: uppercase;
          letter-spacing: 5px;
          display: flex;
          align-items: center;
          justify-content: space-around;
          text-shadow: 2px 2px #b40909;
+
+         @include media($desk){
+            font-size: 5rem;
+            line-height: 5rem;
+         }
+
+         @include media($mobile){
+            font-size: 3rem;
+         }
          &__logo{
              width: 10rem;
              height: 10rem;
@@ -15,6 +24,15 @@
              background-position: bottom;
              background-size: cover;
              border: 2px black solid;
+
+             @include media($desk){
+                width: 7rem;
+                height: 7rem;
+             }
+             @include media($mobile){
+                width: 4rem;
+                height: 4rem;
+             }
          }
        
  }

@@ -1,0 +1,94 @@
+.nav-field{
+    height: 100%;
+    position: relative;
+    background-color: black;
+    @include media($table){
+        
+    }
+    
+}
+.nav{
+    height: 75%;
+    @include flex;
+    flex-direction: column;
+    text-align: center;
+    @include font($Lucky,400,32px, 32px,white);
+    padding: 60px 0px;
+    justify-content: space-between;
+    
+
+    @include media($table){
+        flex-direction: row;
+        height: 100%;
+        padding: 30px;
+        }
+    
+    @include media($mobile){
+        font-size: 20px;
+        line-height: 25px;
+        padding: 5px;
+        flex-direction: column;
+    }
+    
+
+    &__item{
+        margin-bottom: 40px;
+        
+        @include media($table){
+            margin-bottom: 0px;
+            margin: 10px;
+        }
+        .testing{
+            @include media($table){
+                display: none;
+             }
+        }
+        &:hover{
+            color:red;
+            text-shadow: -2px -2px white;
+            .testing{
+                position: relative;
+                bottom: 0px;
+                animation: circle 4s linear infinite;
+
+                
+            }
+        }
+        
+        &--platform{
+            width: 100%;
+            position: relative;
+            bottom: 0px;
+            
+        }
+    }
+}
+.nav__back{
+    height: 25%;
+    background-image: url("../img/nav/SMB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include media($table){
+        display: none;
+     }
+}
+
+@keyframes circle {
+
+    0% {
+        transform: translatex(0);
+    }
+    25%{
+        transform: translatex(-20%);
+    }
+    50%{
+        transform: translatex(0);
+    }
+    75%{
+        transform: translatex(20%);
+    }
+    100% {
+        transform: translatex(0);
+    }
+}
