@@ -25,5 +25,7 @@ export default {
 }
 .header{
   background-color: #dbd7d7;
+  padding:20px auto;
+  border: 10px rgb(148, 148, 151) outset;
 }
 </style>

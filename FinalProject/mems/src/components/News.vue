@@ -10,7 +10,7 @@
             <img :src="test.image" alt="">
         </div>
         <div class="news__txt">{{test.txt}}</div>
-        <div class="news__link"  @click="moreNews(test.id)">read more</div>
+        <div class="news__link" @click="this.$router.push('/news')">mems</div>
     </div>
     </div>
     <div class="newsVideo__area">
